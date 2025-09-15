@@ -1,0 +1,156 @@
+B-BEE 101: How Levels Work & Procurement Recognition
+
+A plain-English guide to understand where your B-BEE level comes from, how procurement recognition is calculated, and what different-sized businesses need to do.
+
+1) The three size bands (and what each must do)
+
+EME (Exempt Micro Enterprise)
+
+Typical turnover: up to R10 million (sector codes may differ).
+
+Compliance method: Affidavit, not a full verification.
+
+Deemed levels (ownership-based):
+
+100% black-owned: Level 1
+
+≥51% black-owned: Level 2
+
+Other ownership: usually Level 4 (affidavit confirms).
+
+QSE (Qualifying Small Enterprise)
+
+Typical turnover: R10–R50 million (sector codes may differ).
+
+Compliance method: Scorecard (+ verification), unless black-owned (then deemed levels apply):
+
+100% black-owned: Level 1
+
+≥51% black-owned: Level 2
+
+Other ownership: measured on the QSE scorecard.
+
+Generic (Large Enterprise)
+
+Turnover: > R50 million.
+
+Compliance method: Full scorecard + verification with a SANAS-accredited verification agency.
+
+ℹ️ Exact thresholds and special rules can vary under sector codes (e.g., Construction, ICT, Finance). We’ll apply the correct code for your industry.
+
+2) What makes up your score (elements)
+
+Your scorecard totals points across five elements (sector codes may weight them differently):
+
+Ownership – effective black ownership (and specific categories such as women, youth, designated groups).
+
+Management Control – representation of black people at board, executive, senior, middle, junior levels.
+
+Skills Development – spend on accredited training, learnerships, internships (with emphasis on priority groups).
+
+Enterprise & Supplier Development (ESD) –
+
+Preferential Procurement (buying from compliant suppliers),
+
+Supplier Development, and
+
+Enterprise Development (supporting black-owned SMMEs).
+
+Socio-Economic Development (SED) – qualifying contributions to beneficiaries.
+
+Priority elements & sub-minimums (why some scores “drop a level”)
+
+Priority elements (typically Ownership, Skills, and ESD).
+
+If you miss the sub-minimum on a priority element, your final level can be discounted (usually by one level per the Codes; QSEs have specific rules: Ownership is mandatory plus one of the other two).
+
+This is why planning and tracking through the year matters.
+
+3) Levels and procurement recognition
+
+Your B-BEE level converts into a recognition percentage. Customers multiply their spend with you by this percentage to count it toward their own scorecard.
+
+Level	Recognition %
+1	135%
+2	125%
+3	110%
+4	100%
+5	80%
+6	60%
+7	50%
+8	10%
+Non-compliant	0%
+Quick example
+
+If your company is Level 2 and your customer buys R1,000,000 from you:
+R1,000,000 × 125% = R1,250,000 recognised toward their procurement points.
+
+4) Affidavit vs Verification
+
+Affidavit (EME and some black-owned QSEs)
+
+A sworn statement confirming turnover band and black ownership %.
+
+Uses the correct industry template (generic or sector-specific).
+
+Valid for 12 months (or until circumstances change).
+
+Verification (QSE & Generic not covered by deemed levels)
+
+Independent assessment by a SANAS-accredited verification agency.
+
+Checks evidence for each element (policies, payroll, training records, supplier certificates/affidavits, ESD/SED agreements and proof, etc.).
+
+Results in a B-BEE certificate showing your points and level.
+
+SpecCon prepares and supports your verification-readiness (modelling, evidence file, mock audit). Verification itself is conducted independently by SANAS-accredited agencies.
+
+5) Sector codes: why they matter
+
+Some industries have their own sector codes with different targets, weightings, or definitions (e.g., Construction, Financial Services, ICT, Tourism, Property, Transport).
+
+We’ll confirm which code applies to you.
+
+We’ll flag any sector-specific quirks (e.g., how procurement is measured, which learnerships count, special ownership rules).
+
+6) Getting (and keeping) the level you need
+
+Plan early. Map your current points and the sub-minimums.
+Focus spend. Align Skills, ESD/SED, and procurement to close gaps efficiently.
+Clean your supplier base. Prioritise Level 1–4 and ≥51% black-owned suppliers where possible; collect valid affidavits/certificates.
+Build the evidence file as you go. Keep signed agreements, invoices, proof of payment, attendance registers, learner statements of results, supplier certificates, etc.
+Run a mock audit. Catch gaps before verification.
+
+7) Common pitfalls (and quick wins)
+
+Pitfall: Missing a priority element sub-minimum → level drop.
+Win: Track sub-minimums quarterly; adjust spend before year-end.
+
+Pitfall: Supplier certificates expired at verification.
+Win: Monthly/quarterly supplier clean-ups and reminders.
+
+Pitfall: Skills spend that isn’t accredited or poorly evidenced.
+Win: Use accredited programmes (incl. learnerships) with full documentation.
+
+Pitfall: Last-minute ESD/SED with weak proof.
+Win: Pre-approved SD/ESD agreements, milestone evidence, and clear beneficiary eligibility.
+
+8) Quick glossary
+
+Recognition: The % your customers can claim on their procurement for buying from you.
+
+Deemed level: Automatic level for black-owned EME/QSE (affidavit-based).
+
+Priority element: Element with a sub-minimum you must reach to avoid a level discount.
+
+Sub-minimum: Minimum % of the target you must achieve on a priority element.
+
+Sector code: Industry-specific version of the Codes of Good Practice.
+
+9) Ready to take action?
+
+EME: Generate your affidavit and stay tender-ready.
+
+QSE/Generic: Use the Scorecard Estimator to see your projected level, then book a readiness review.
+
+Prefer a guided route? Chat to a SpecCon consultant—we’ll build the plan and evidence file with you.

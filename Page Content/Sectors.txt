@@ -1,0 +1,54 @@
+
+Here’s the current list of gazetted B-BEE Sector Codes (Section 9(1) Sector Codes) in South Africa:
+
+Legal Sector Code (2024) 
+DTIC
+
+Defence Sector Code (2019) 
+DTIC
+
+Construction Sector Code (2017) 
+DTIC
+
+Agri-BEE (Agriculture) Sector Code (2017) 
+DTIC
+
+Financial Services Sector Code (2017) 
+DTIC
+
+ICT Sector Code (2016) 
+DTIC
+
+Property Sector Code (2017) 
+DTIC
+
+Integrated Transport Sector Codes (2009) — see sub-sectors below 
+DTIC
+
+Forest Sector Code (2017) 
+DTIC
+
+Marketing, Advertising & Communication (MAC) Sector Code (2016) 
+DTIC
+
+Tourism Sector Code (2015) 
+DTIC
+
+Transport sub-sectors (each with its own sub-sector code)
+
+Bus Commuter & Coach Services
+
+Taxi Industry
+
+Road Freight
+
+Public Transport (Public Sub-sector)
+
+Maritime Transport & Services
+
+Forwarding & Clearing
+
+Rail
+
+Domestic Aviation 
+DTIC

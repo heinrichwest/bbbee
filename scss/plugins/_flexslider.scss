@@ -1,0 +1,13 @@
+/*-----------------------------------------------
+|   Flexslider
+-----------------------------------------------*/
+
+.flex-direction-nav a{
+  color: transparent;
+  text-shadow: none;
+
+  &:before {
+    color: transparent;
+    text-shadow: none;
+  }
+}

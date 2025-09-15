@@ -1,0 +1,25 @@
+/*-----------------------------------------------
+|   Grid
+-----------------------------------------------*/
+//.grid{
+//  display: grid;
+//  grid-gap: $grid-gap;
+//}
+//
+//@each $breakpoint in map-keys($grid-breakpoints) {
+//  @include media-breakpoint-up($breakpoint) {
+//    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//    $items: 2;
+//
+//    @while $items <= $grid-items {
+//      .grid#{$infix}-#{$items}{
+//        grid-template-columns: repeat($items, 1fr);
+//      }
+//      $items: $items + 1;
+//    }
+//  }
+//}
+//
+//.grid-gap-1{
+//  grid-gap: 0.0625rem;
+//}

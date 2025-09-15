@@ -1,0 +1,90 @@
+/*-----------------------------------------------
+|   Navigation bar
+-----------------------------------------------*/
+.navbar-glass{
+  background-color: transparent;
+}
+
+.safari{
+  .navbar-glass{
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+  }
+}
+
+
+
+.navbar-brand{
+  font-weight: $navbar-brand-font-weight;
+}
+.nav-link-text{
+  padding-left:  3px;
+  padding-right: 1px;
+}
+
+.navbar .dropdown-menu:after{
+  display:none;
+}
+
+.navbar{
+  font-size: 0.75rem;
+  letter-spacing: .125rem;
+  z-index: 1030;
+}
+
+
+/*-----------------------------------------------
+|   Hover effect of nav manu
+-----------------------------------------------*/
+
+@include media-breakpoint-up(xl) {
+  .dropdown-toggle:after{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease-in-out;
+  } 
+
+  .dropdown-menu-on-hover{
+    &.dropdown {
+      @include hover-focus {
+        .dropdown-toggle:after{ opacity: 0; }
+        .dropdown-menu { display: block; }   
+      }
+    }
+  }
+  .navbar .nav-item{
+    position: relative;
+    z-index: 111;
+
+    &:before{
+        content:"";
+        display: block;
+        width: 0%;
+        height: 4px; 
+        border-radius: 3px;
+        color:transparent;
+        background:transparent;
+        position: absolute;
+        left: 50%;
+        bottom: 40%;
+        transform: translate3d(-50%, -50%, 0);
+        transition: all .5s ;
+        z-index: -11;
+    }
+    @include hover-focus {
+      &:before{
+          width: 80%;
+          z-index: -11;
+      }
+    }
+    &.active{
+        &:before{
+          width: 80%;
+          z-index: -11;
+      }
+    }
+  }
+}
+
+
