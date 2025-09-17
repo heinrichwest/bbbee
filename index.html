@@ -34,6 +34,17 @@
     <link href="assets/lib/semantic-ui-accordion/accordion.min.css" rel="stylesheet">
     <link href="assets/lib/semantic-ui-transition/transition.min.css" rel="stylesheet">
     <link href="assets/css/theme.css" rel="stylesheet">
+    <style>
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 40px;
+      }
+      .card h2 {
+        font-size: 1.5rem;
+      }
+    </style>
 
   </head>
 
@@ -121,14 +132,14 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-12">
-              <div class="heading-container">
+           <div class="col-lg-12">
+              <div class="element-card">
                 <div class="content-container">
                   <h2 >Who is SpecCon?</h2>
                   <p style="color: #1F2937; font-size: 20px; line-height: 1.5;">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
                 </div>
               </div>
-              <div class="heading-container">
+              <div class="element-card priority-card">
                 <div class="content-container">
                   <h2 >Why our consultants are the best in South Africa</h2>
                   <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;" >
@@ -139,7 +150,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="heading-container">
+             <div class="element-card tools-card">
                 <div class="content-container">
                   <h2>This website is designed to give you free tools and up-to-date guidance</h2>
                   <p style="color: #1F2937; font-size: 20px; line-height: 1.2;">Use the tools to see where you stand today and what to fix next—at no cost.</p>
@@ -153,7 +164,8 @@
                   <p style="color: #1F2937; font-size: 20px; line-height: 1.2;">We also publish plain-English updates: sector code changes, verification deadlines, practical guides, and checklists—so you always know what’s new and what it means for your scorecard.</p>
                 </div>
               </div>
-              <div class="heading-container">
+              
+              <div class="element-card">
                 <div class="content-container">
                   <h2>How we help (end-to-end)</h2>
                   <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;">
@@ -164,7 +176,7 @@
                   </ul>
                 </div>
               </div>
-              <div class="heading-container">
+             <div class="element-card">
                 <div class="content-container">
                   <h2>Get started</h2>
                   <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;">
@@ -282,7 +294,7 @@
                 </div>
                 <div class="col-md-auto pl-3 mt-4 mt-md-0 pb-md-2">
                   <ul class="fa-ul mb-0">
-                    <li><span class="fa-li pr-2"><i class="fab fa-linkedin-in"></i></span><a href="https://www.linkedin.com/">Linkedin</a></li>
+                    <li><span class="fa-li pr-2"><i class="fab fa-linkedin-in"></i></span><a href="https://at.linkedin.com/company/speccon-pty-ltd">Linkedin</a></li>
                     
                   
                   </ul>
@@ -309,31 +321,38 @@
 
 
       <!-- <section> begin ============================-->
-      <section style=" background-color: #302758;">
+      <section style=" background-color: #12265E;">
 
         <div class="container">
           <h3 class="text-white mb-4">FAQs</h3>
           <div class="row">
             <div class="col-md-8 px-0">
               <div class="ui accordion ml-2">
-                <div class="title active text-400 font-weight-bold"><i class="dropdown icon"></i> How do I get to and form conference?</div>
+                <div class="title active text-400 font-weight-bold"><i class="dropdown icon"></i>Which entities are measurable under the Codes of Good Practice (the Codes)?</div>
                 <div class="content active ml-4 text-200 mt-0">
                   <p class="transition visible" style="display: block !important;">
-                    The Enercare Centre is easily accessible by taxi, bus, or streetcar. Limited paid parking is available at the Enercare Centre. Days rates in the underground lot are typically $19.00 per vehicle. Surface lots are typically $16 per vehicle
-                    For persons with disabilities or mobility issues, we recommend using the underground parking available (Lot 850) in the first instance as it’s a much shorter distance to the event floor and it is served by elevators. More info is available here</p>
-                  </p>
+                   The following Entities are measurable under the Codes:
+
+all Organs of State and Public Entities;
+all Measured Entities that undertake any economic activity with all Organs of State and Public Entities;
+any other Entity that undertakes any economic activity, whether direct or indirect, with any Entity that is subject to measurement under the Codes. </p>
                 </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> How can I get to the conference?</div>
+                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> How is B-BBEE classification determined?</div>
                 <div class="content ml-4 text-200 mt-0">
-                  <p>Enercare Centre is served by public trains, buses and streetcars. All trains and buses are accessible – many streetcars are as well, and the TTC is in the process of upgrading streetcars city-wide. You can find more information on accessibility within TTC’s services here. All public transport information can be found here, or take a look at our Collision transport blog.</p>
+                  <p>B-BBEE classify entities based on annual turnover, namely:
+
+Start-up Enterprise. This is a recently formed or incorporated entity that has been in operation for less than one (1) year. A start-up enterprise does not include any newly constituted enterprise which is merely a continuation of a pre-existing enterprise;
+Exempted Micro-Enterprises (EMEs). This are entities that generate an annual turnover of R0 and less R10 million.
+Qualifying Small Enterprises (QSEs). These entities have an annual turnover of above R10 million and less R50 million.
+Large Enterprises, are entities with an annual turnover of above R50 million.</p>
                 </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> Is there accessible parking available?</div>
+                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> Can entities operate with consolidated sworn affidavits for purposes of a joint venture?</div>
                 <div class="content ml-4 text-200 mt-0">
-                  <p>We can facilitate accessible parking where required. Please fill in this form in advance so we can best assist. A member of the community support team will contact you shortly after.</p>
+                  <p>The codes do not have a provision for consolidation of Sworn Affidavits in joint venture.</p>
                 </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> Is there accessible accommodation nearby?</div>
+                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> How can an entity apply the modified flow through to obtain 51% and 100% black ownership?</div>
                 <div class="content ml-4 text-200 mt-0">
-                  <p></p>
+                  <p>In terms of Code Series 100, an entity may apply the modified-flow through principle to determine black ownership, where in the chain of ownership structure black people have a flow-through level of participation of at least 51%, then only once in that entire ownership structure of the entity such black participation may be treated as though it were 100%.</p>
                 </div>
               </div>
             </div>

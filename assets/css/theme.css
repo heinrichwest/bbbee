@@ -17014,9 +17014,367 @@ a.text-white:hover, a.text-white:focus {
   color: rgba(255, 255, 255, 0.75);
 }
 
+
+
 /*-----------------------------------------------
 |   Pricing card border
------------------------------------------------*/
+-----------------------------------------------*//* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Section */
+.header-section {
+    background: linear-gradient(135deg, #12265E 0%, #87CEEB 100%);
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Main Content */
+.main-content {
+    padding: 60px 0;
+}
+
+.elements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Card Styles */
+.element-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid #12265E;
+}
+
+.element-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.element-card h2 {
+    color: #12265E;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.element-card h3 {
+    color: #12265E;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 25px 0 12px 0;
+    border-left: 3px solid #87CEEB;
+    padding-left: 12px;
+}
+
+.element-card h4 {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.element-card p {
+    margin-bottom: 15px;
+    color: #555;
+    text-align: justify;
+}
+
+.element-card ul {
+    margin: 12px 0 15px 0;
+    padding-left: 20px;
+}
+
+.element-card li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* CTA Links */
+.cta-link {
+    display: inline-block;
+    background: linear-gradient(135deg, #12265E 0%, #87CEEB 100%);
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(18, 38, 94, 0.3);
+    color: white;
+    text-decoration: none;
+}
+
+/* Special Card Variations */
+.priority-card {
+    border-top: 4px solid #ff9c2a;
+    background: linear-gradient(135deg, #fff8f0 0%, #ffffff 100%);
+}
+
+.priority-card h2 {
+    color: #ff9c2a;
+}
+
+.priority-card h3 {
+    border-left-color: #ff9c2a;
+}
+
+.tools-card {
+    border-top: 4px solid #87CEEB;
+    background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.tools-card h2 {
+    color: #87CEEB;
+}
+
+.tools-card h3 {
+    border-left-color: #12265E;
+}
+
+/* ESD Combined Section */
+.esd-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-top: 4px solid #12265E;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.esd-section h2 {
+    color: #12265E;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.esd-section > p {
+    margin-bottom: 25px;
+    color: #555;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.esd-subsections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.esd-subsection {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-left: 3px solid #12265E;
+}
+
+.esd-subsection h3 {
+    color: #12265E;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    border-left: none;
+    padding-left: 0;
+}
+
+.esd-subsection h4 {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+}
+
+.esd-subsection p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.esd-subsection ul {
+    margin: 12px 0 15px 0;
+    padding-left: 20px;
+}
+
+.esd-subsection li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+/* Priority Alert Box */
+.priority-alert {
+    margin-top: 25px;
+    padding: 20px;
+    background: #fff3cd;
+    border-radius: 10px;
+    border-left: 4px solid #ff9c2a;
+}
+
+.priority-alert h3 {
+    color: #ff9c2a;
+    margin-bottom: 10px;
+    border-left: none;
+    padding-left: 0;
+}
+
+.priority-alert p {
+    margin: 0;
+    color: #856404;
+}
+
+/* Bottom Grid */
+.bottom-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .elements-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    
+    .esd-subsections {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .header-section p {
+        font-size: 1.1rem;
+    }
+
+    .elements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .esd-subsections {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .element-card {
+        padding: 25px;
+    }
+    
+    .esd-section {
+        padding: 25px;
+    }
+    
+    .esd-subsection {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .header-section {
+        padding: 40px 0;
+    }
+
+    .header-section h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header-section p {
+        font-size: 1rem;
+    }
+
+    .main-content {
+        padding: 40px 0;
+    }
+
+    .element-card {
+        padding: 20px;
+    }
+    
+    .element-card h2 {
+        font-size: 1.6rem;
+    }
+    
+    .element-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .esd-section {
+        padding: 20px;
+    }
+    
+    .esd-section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .esd-subsection {
+        padding: 15px;
+    }
+    
+    .cta-link {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
 .border-white-20 {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
