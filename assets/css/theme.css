@@ -3398,6 +3398,7 @@ fieldset:disabled a.btn {
   background-color: #FC097C;
   border-color: #FC097C;
 }
+
 .btn-outline-danger:focus, .btn-outline-danger.focus {
   -webkit-box-shadow: 0 0 0 0 rgba(252, 9, 124, 0.5);
   box-shadow: 0 0 0 0 rgba(252, 9, 124, 0.5);

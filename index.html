@@ -1,469 +1,391 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en" class="scroll-smooth">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecCon Holdings | B-BBEE Made Practical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>B-BBEE Home</title>
-    <meta name="keywords" content="bbbee">
-
-
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
-
-
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
-    <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
-    <link href="assets/lib/semantic-ui-accordion/accordion.min.css" rel="stylesheet">
-    <link href="assets/lib/semantic-ui-transition/transition.min.css" rel="stylesheet">
-    <link href="assets/css/theme.css" rel="stylesheet">
     <style>
-      .card {
-        border: 1px solid #ccc;
-        border-radius: 15px;
-        padding: 20px;
-        margin-bottom: 40px;
-      }
-      .card h2 {
-        font-size: 1.5rem;
-      }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #f9fafb;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
     </style>
+</head>
 
-  </head>
+<body class="bg-white text-gray-800">
 
+    <!-- Header -->
+    <header id="home" class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-bold text-gray-900">
+                    <img src="assets/img/logos/B-BBEE.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About Us</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition duration-300">Services</a>
+                    <a href="#team" class="text-gray-600 hover:text-blue-600 transition duration-300">Consultants</a>
+                    <a href="#clients" class="text-gray-600 hover:text-blue-600 transition duration-300">Clients</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300 shadow">Register Now</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="#team" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
+                <a href="#clients" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="#contact" class="block mt-4 bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300 text-center">Register Now</a>
+            </div>
+        </div>
+    </header>
 
-  <body id="home" data-spy="scroll" data-target="#navbar-spy" data-offset="100">
-
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
     <main>
-
-
-      <!-- ============================================-->
-      <!-- Preloader ==================================-->
-      <div class="preloader p-0" id="preloader">
-        <div class="loader d-flex flex-column align-items-center">
-          <div class="ball-scale-ripple">
-            <div></div>
-          </div>
-          <h5 class="fs-1 pr- text-light text-uppercase mb-0 mt-3">Loading</h5>
-        </div>
-      </div>
-      <!-- ============================================-->
-      <!-- End of Preloader ===========================--><a class="bottom-to-top rounded-soft" href="#top" data-fancyscroll><span class="fas fa-angle-up lg" data-fa-transform="down-2"></span></a>
-      <nav class="navbar navbar-expand-lg navbar-dark p-0" style="background-color: #12265E;" id="top">
-        <div class="container"><a class="navbar-brand ml-3 ml-md-0" href="index.html"><img src="assets/img/logos/B-BBEE.png" alt="logo" style="margin-bottom: 9px; height: 70px;" /></a>
-          <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse ml-2 ml-md-0" id="navbarContent">
-            <ul class="navbar-nav text-uppercase font-weight-semi-bold ml-auto" id="navbar-spy">
-              <li class="nav-item active"><a class="nav-link" href="index.html"><span class="nav-link-text">Home</span></a></li>
-              <li class="nav-item dropdown dropdown-menu-on-hover"><a class="nav-link dropdown-toggle" id="navbarDropdown1" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="nav-link-text">Learn BBBEE</span></a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <a class="dropdown-item" href="b-bbee_101.html">B-BBEE 101</a>
-                  <a class="dropdown-item" href="deep-dives_per_element.html">Deep-dives per element</a>
-                  <a class="dropdown-item" href="sectors.html">Sectors</a>
+        <!-- Hero Section -->
+        <section class="relative text-white min-h-screen flex items-center justify-center overflow-hidden">
+             <!-- Background Image -->
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
+             <!-- Overlay -->
+            <div class="absolute inset-0 bg-gray-900 opacity-60 z-10"></div>
+            <div class="relative z-20 container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">B-BBEE Made Practical</h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 animate-fade-in-up">Get your B-BBEE level sorted with plain-English guidance, free self-serve tools, and hands-on support from South Africa’s best consultants.</p>
+                    <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">Get Started</a>
                 </div>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="why_use_us.html"><span class="nav-link-text">Why use us</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="bbbee_consultants.html"><span class="nav-link-text">BBBEE Consultants</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="our_clients.html"><span class="nav-link-text">Our Clients</span></a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact" data-fancyscroll="data-fancyscroll"> <span class="nav-link-text"> contact</span></a></li>
-            </ul>
-
-            <button class="text-base ml-lg-4 mt-3 mt-lg-0 btn btn-outline-light mb-4 mb-lg-0" type="button" data-toggle="modal" data-target=".bd-example-modal-lg">Register Now</button>
-          </div>
-        </div>
-      </nav>
-
-
-      <!-- <section> begin ============================-->
-      <section class="py-0 text-center text-white">
-
-        <div class="bg-holder overlay" style="background-image:url(assets/img/background/banner-bg.png);">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row min-vh-100 py-6 py-md-0 flex-center">
-            <div class="col-auto">
-
-              <h1 class="text-uppercase text-white font-weight-bold ls-1" data-zanim-xs='{"animation":"slide-right","delay":0.6,"duration":0.5}' data-zanim-trigger="scroll">B-BBEE made practical</h1>
-              <p class="lead text-sans-serif ls font-weight-extra-light mt-5" data-zanim-xs='{"animation":"zoom-in","delay":0.8,"duration":0.5}' data-zanim-trigger="scroll">SpecCon Holdings<br />Get your B-BBEE level sorted with plain-English guidance, free self-serve tools, and hands-on support from South Africa’s best consultants</p>
             </div>
-          </div>
-        </div>
-      </section>
-      <div class="alert alert-light alert-dismissible fade show sticky-kit shadow-sm rounded-0 mb-0" role="alert">
-        <div class="row justify-content-center">
-          <div class="col-md-4 col-lg-5 border-md border-lg-0 rounded-soft">
-            <p class="mb-0 text-base text-lg-right text-center mt-lg-2">Get Started until price go up & save 10%</p>
-          </div>
-          <div class="col-md-3 col-lg-2 text-center px-0 pt-lg-1 pt-md-2"><span class="fs-1 font-weight-medium text-warning" data-countdown="2019/12/31" data-countdown-fallback="Getting ready"></span></div>
-          <div class="col-md-4 col-lg-4 text-center text-md-left mt-1 mt-md-0"><a class="btn btn-danger btn-lg mt-3" href="https://forms.office.com/r/0xtEm2Vw9n" data-fancyscroll="data-fancyscroll" data-zanim-xs='{"animation":"zoom-in","delay":0.8,"duration":0.5}' data-zanim-trigger="scroll">Get Started</a></div>
-        </div>
-        <button class="close mt-md-2" type="button" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-      </div>
+        </section>
 
-
-      <!-- <section> begin ============================-->
-      <section id="about" class="py-5">
-
-        <div class="bg-holder overlay bg-overlay-primary" style="background-image:url(assets/img/background/organizers-bg.png);">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row">
-           <div class="col-lg-12">
-              <div class="element-card">
-                <div class="content-container">
-                  <h2 >Who is SpecCon?</h2>
-                  <p style="color: #1F2937; font-size: 20px; line-height: 1.5;">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Your Trusted B-BBEE Partner</h2>
+                    <p class="text-lg text-gray-600 mt-2">Turning compliance from a headache into a working plan.</p>
                 </div>
-              </div>
-              <div class="element-card">
-                <div class="content-container">
-                  <h2 >Why our consultants are the best in South Africa</h2>
-                  <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;" >
-                    <li>Deep, cross-sector experience in Ownership, Management Control & Employment Equity, Skills Development, Preferential Procurement, ESD and SED.</li>
-                    <li>Strategy you can actually implement—clear deliverables, budgets, timelines, and a living evidence index.</li>
-                    <li>Verification readiness baked in from day one (mock audits, document checklists, and gap-closing “quick wins”).</li>
-                    <li>A trusted network for specialist needs (ESOPs/trusts, supplier enablement, disability learnerships), coordinated by your SpecCon lead.</li>
-                  </ul>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Strategic planning" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Who is SpecCon?</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Deep Expertise:</strong> Cross-sector experience in all B-BBEE elements.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Actionable Strategy:</strong> Clear deliverables, budgets, timelines, and a living evidence index.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Verification-Ready:</strong> Mock audits, checklists, and gap-closing “quick wins” from day one.</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
-             <div class="element-card tools-card">
-                <div class="content-container">
-                  <h2>This website is designed to give you free tools and up-to-date guidance</h2>
-                  <p style="color: #1F2937; font-size: 20px; line-height: 1.2;">Use the tools to see where you stand today and what to fix next—at no cost.</p>
-                  <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;">
-                    <li>EME Affidavit Generator – get the right affidavit for your entity and sector, ready to sign.</li>
-                    <li>Scorecard Estimator (QSE & Generic) – model your projected level and test “what-if” scenarios.</li>
-                    <li>Procurement Recognition Calculator – see how supplier levels convert to recognition and points.</li>
-                    <li>Skills Levy & Grant Planner – turn SDL into training outcomes and SETA grants.</li>
-                    <li>ESD Target Calculator – compute SD/ESD targets and generate a simple action list.</li>
-                  </ul>
-                  <p style="color: #1F2937; font-size: 20px; line-height: 1.2;">We also publish plain-English updates: sector code changes, verification deadlines, practical guides, and checklists—so you always know what’s new and what it means for your scorecard.</p>
-                </div>
-              </div>
-
-              <div class="element-card">
-                <div class="content-container">
-                  <h2>How we help (end-to-end)</h2>
-                  <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;">
-                    <li>Assess – current level, risks, and fast wins.</li>
-                    <li>Plan – element-by-element roadmap with budgets and owners.</li>
-                    <li>Implement – evidence collection, supplier clean-up, skills & ESD programmes.</li>
-                    <li>Verify – mock audit, file index, and support through your chosen SANAS-accredited agency.</li>
-                  </ul>
-                </div>
-              </div>
-             <div class="element-card">
-                <div class="content-container">
-                  <h2>Get started</h2>
-                  <ul style="color: #1F2937; font-size: 20px; line-height: 1.2;">
-                    <li>Generate my EME affidavit</li>
-                    <li>Estimate my score (QSE/Generic)</li>
-                    <li>Book a 15-minute consult with a SpecCon expert</li>
-                  </ul>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
+        </section>
 
+        <!-- Services Section -->
+        <section id="services" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">An End-to-End Solution</h2>
+                    <p class="text-lg text-gray-600 mt-2">We provide comprehensive support at every stage of your B-BBEE journey.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="search" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Assess</h3>
+                        <p class="text-gray-600">We analyze your current level, identify potential risks, and highlight opportunities for fast wins.</p>
+                    </div>
+                    <!-- Service Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="map" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Plan</h3>
+                        <p class="text-gray-600">Receive a detailed, element-by-element roadmap complete with budgets and owners.</p>
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="play-circle" class="w-8 h-8 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Implement</h3>
+                        <p class="text-gray-600">We assist with evidence collection, supplier clean-up, and skills & ESD programmes.</p>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300">
+                        <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="shield-check" class="w-8 h-8 text-blue-600"></i> 
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Verify</h3>
+                        <p class="text-gray-600">Benefit from mock audits, file indexing, and full support through verification.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-      </section>
-      
-
-
-
-
-
-
-
-
-      <!-- <section> begin ============================-->
-      <section>
-
-        <div class="bg-holder overlay overlay-1" style="background-image:url(assets/img/background/subscription-bg.jpg);">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row flex-center">
-            <div class="col-sm-auto text-md-right text-center py-md-3 pb-3">
-              <h3 class="font-weight-thin text-white mb-0">Subscribe</h3>
-              <p class="text-100 mb-0">Now to get updates!</p>
-            </div>
-            <div class="divider d-none d-md-block" data-zanim-xs='{"delay":0.5,"from":{"visibility":"hidden","height":"0px"},"to":{"visibility":"visible","height":"90px"},"duration":1}' data-zanim-trigger="scroll"></div>
-            <div class="col-sm-8 col-md-6 col-lg-5 col-xl-4">
-              <div class="form-row">
-                <div class="col-8">
-                  <input class="form-control" type="email" placeholder="Email Address" />
+        <!-- Sectors Section -->
+        <section id="sectors" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Expertise Across All B-BBEE Sector Codes</h2>
+                    <p class="text-lg text-gray-600 mt-2">We have in-depth knowledge of all gazetted Section 9(1) Sector Codes.</p>
                 </div>
-                <div class="col-4">
-                  <button class="btn btn-primary btn-block" type="submit">Subscribe</button>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                             <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                <div class="font-medium text-gray-700">Legal Sector</div>
+                                <div class="font-medium text-gray-700">Defence Sector</div>
+                                <div class="font-medium text-gray-700">Construction Sector</div>
+                                <div class="font-medium text-gray-700">Agri-BEE (Agriculture) Sector</div>
+                                <div class="font-medium text-gray-700">Financial Services Sector</div>
+                                <div class="font-medium text-gray-700">ICT Sector</div>
+                                <div class="font-medium text-gray-700">Property Sector</div>
+                                <div class="font-medium text-gray-700">Forest Sector</div>
+                                <div class="font-medium text-gray-700">Marketing, Advertising & Communication (MAC) Sector</div>
+                                <div class="font-medium text-gray-700">Tourism Sector</div>
+                                <div class="font-medium text-gray-700 col-span-2">Integrated Transport Sector (including Bus, Rail, Aviation, etc.)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Diverse industry sectors" class="rounded-xl shadow-lg w-full">
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
 
-
-
-
-      <!-- <section> begin ============================-->
-      <section class="bg-200">
-
-        <div class="container">
-          <h3 class="mb-6">Our Clients</h3>
-          <div class="row" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
-              <div class="d-flex justify-content-center align-items-center border border-2x rounded-soft mb-4 content-container" style="height:150px;"><img src="assets/img/logos/Avi.png" alt="" style="max-height: 100%; max-width: 100%; object-fit: contain;" data-zanim-xs='{"animation":"slide-right","delay":0.1}' /></div>
-            </div>
-      
-            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
-              <div class="d-flex justify-content-center align-items-center border border-2x rounded-soft mb-4 content-container" style="height:150px;"><img src="assets/img/logos/Afrgi.png" alt="" style="max-height: 100%; max-width: 100%; object-fit: contain;" data-zanim-xs='{"animation":"slide-right","delay":0.3}' /></div>
-            </div>
-            <div class="col-xl-2 col-lg-3 col-md-3 col-6">
-              <div class="d-flex justify-content-center align-items-center border border-2x rounded-soft mb-4 content-container" style="height:150px;"><img src="assets/img/logos/BMW.png" alt="" style="max-height: 100%; max-width: 100%; object-fit: contain;" data-zanim-xs='{"animation":"slide-right","delay":0.4}' /></div>
-            </div>
-            
-            
-    
-          </div>
-        </div>
-      </section>
-
-
-
-      <!-- <section> begin ============================-->
-      <section id="contact">
-
-        <div class="container">
-          <h3 class="mb-lg-6 mb-4">Location & Contact</h3>
-          <div class="row">
-            <div class="col-lg-4">
-              <form class="zform" method="post">
-                <input class="form-control" type="hidden" name="to" value="username@domain.extension" />
-                <input class="form-control" type="text" name="name" required="" placeholder="Your Name" />
-                <input class="form-control my-4" type="email" name="from" required="" placeholder="Email Address" />
-                <textarea class="form-control text-aria-height" name="massage" rows="10" placeholder="Type your message"></textarea>
-                <button class="btn btn-primary btn-block btn-lg mt-4" type="submit" name="submit" value="Send!">submit</button>
-                <div class="zform-feedback"></div>
-              </form>
-            </div>
-            <div class="col-lg-8 mt-4 mt-lg-0 d-flex flex-column justify-content-between">
-              <div class="row">
-                <div class="col-md-auto col-6 border-400 pr-md-4">
-                  <br class="fa-ul mb-0">
-                  
+        <!-- Team Section -->
+        <section id="team" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Our Expert Consultants</h2>
+                    <p class="text-lg text-gray-600 mt-2">Meet the trusted professionals ready to guide you.</p>
                 </div>
-                <div class="col-md-auto col-6 border-left border-md-right pr-md-4">
-                  <ul class="fa-ul mb-0">
-                    <li><span class="fa-li pr-2"><i class="fas fa-envelope"></i></span><a href="mailto:help@speccon.co.za">Help@speccon.co.za</a></li>
-                  </ul>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Zandri">
+                        <h3 class="text-xl font-bold text-gray-900">Zandri</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Anandi">
+                        <h3 class="text-xl font-bold text-gray-900">Anandi</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gert">
+                        <h3 class="text-xl font-bold text-gray-900">Gert</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
                 </div>
-                <div class="col-md-auto pl-3 mt-4 mt-md-0 pb-md-2">
-                  <ul class="fa-ul mb-0">
-                    <li><span class="fa-li pr-2"><i class="fab fa-linkedin-in"></i></span><a href="https://at.linkedin.com/company/speccon-pty-ltd">Linkedin</a></li>
-                    
-                  
-                  </ul>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-900">Trusted by Industry Leaders</h2>
                 </div>
-              </div>
-             <div class="googlemap rounded-soft mt-4 mt-lg-0" style="min-height: 245px;">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.373299175368!2d28.18871131504176!3d-25.924945983573547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzI5LjgiUyAyOMKwMTEnMjguMiJF!5e0!3m2!1sen!2sus!4v1634557890123!5m2!1sen!2sus&q=Suite+W003+%26+W004%2C+Midlands+Office+Park+West%2C+1+Mount+Quray+Street%2C+Midstream%2C+1692" 
+                <div class="grid grid-cols-2 md:grid-cols-4 items-center">
+                    <div class="flex justify-center">
+                        <img src="assets/img/logos/Avi.png" alt="Client Logo 1" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="assets/img/logos/Afgri.png" alt="Client Logo 2" class="h-40 filter hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="assets/img/logos/BMW.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="assets/img/logos/Absa logo.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Frequently Asked Questions</h2>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                            Which entities are measurable under the Codes of Good Practice?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">The following Entities are measurable under the Codes: all Organs of State and Public Entities; all Measured Entities that undertake any economic activity with all Organs of State and Public Entities; and any other Entity that undertakes any economic activity, whether direct or indirect, with any Entity that is subject to measurement under the Codes.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                           How is B-BBEE classification determined?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">B-BBEE classifies entities based on annual turnover: <br>• <strong>Exempted Micro-Enterprises (EMEs):</strong> R0 - R10 million. <br>• <strong>Qualifying Small Enterprises (QSEs):</strong> R10 million - R50 million. <br>• <strong>Large Enterprises:</strong> Above R50 million.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                           Can entities use consolidated sworn affidavits for a joint venture?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">The codes do not have a provision for consolidation of Sworn Affidavits in a joint venture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Let's Connect</h2>
+                    <p class="text-lg text-gray-600 mt-2">Reach out to us for a consultation or any inquiries.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                        <iframe 
+    src="https://forms.office.com/pages/responsepage.aspx?id=D8fp1KZZ1kaOao85eBm4CmyGXA5kVhNDn_OrC3GeiZZUQk02Sk9HWFdSVDU2UVlFTVNXNE5JUEJYVi4u&route=shorturl" 
     width="100%" 
-    height="245" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy">
-  </iframe>
-</div> <div class="marker-content">
-                  <h5>SpecCon Holdings</h5>
-                  <p>Suite W003 & W004, Midlands Office Park West, 1 Mount Quray Street, Midstream, 1692</p>
+    height="800" 
+    style="border: none;">
+</iframe>
+                    </div>
+                    <div class="space-y-8">
+                         <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Contact Details</h3>
+                            <div class="space-y-4 text-gray-600">
+                                <p class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-blue-600"></i> <a href="mailto:help@speccon.co.za" class="hover:text-blue-600">help@speccon.co.za</a></p>
+                                <p class="flex items-center"><i data-lucide="linkedin" class="w-5 h-5 mr-3 text-blue-600"></i> <a href="https://at.linkedin.com/company/speccon-pty-ltd" class="hover:text-blue-600">LinkedIn</a></p>
+                                <p class="flex items-start"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-blue-600 mt-1"></i> <span>Suite W003 & W004, Midlands Office Park West, 1 Mount Quray Street, Midstream, 1692</span></p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl shadow-lg overflow-hidden h-64">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.373299175368!2d28.18871131504176!3d-25.924945983573547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzI5LjgiUyAyOMKwMTEnMjguMiJF!5e0!3m2!1sen!2sus!4v1634557890123!5m2!1sen!2sus&q=Suite+W003+%26+W004%2C+Midlands+Office+Park+West%2C+1+Mount+Quray+Street%2C+Midstream%2C+1692" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                      </div> 
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-
-      <!-- <section> begin ============================-->
-      <section style=" background-color: #12265E;">
-
-        <div class="container">
-          <h3 class="text-white mb-4">FAQs</h3>
-          <div class="row">
-            <div class="col-md-8 px-0">
-              <div class="ui accordion ml-2">
-                <div class="title active text-400 font-weight-bold"><i class="dropdown icon"></i>Which entities are measurable under the Codes of Good Practice (the Codes)?</div>
-                <div class="content active ml-4 text-200 mt-0">
-                  <p class="transition visible" style="display: block !important;">
-                   The following Entities are measurable under the Codes:
-
-all Organs of State and Public Entities;
-all Measured Entities that undertake any economic activity with all Organs of State and Public Entities;
-any other Entity that undertakes any economic activity, whether direct or indirect, with any Entity that is subject to measurement under the Codes. </p>
-                </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> How is B-BBEE classification determined?</div>
-                <div class="content ml-4 text-200 mt-0">
-                  <p>B-BBEE classify entities based on annual turnover, namely:
-
-Start-up Enterprise. This is a recently formed or incorporated entity that has been in operation for less than one (1) year. A start-up enterprise does not include any newly constituted enterprise which is merely a continuation of a pre-existing enterprise;
-Exempted Micro-Enterprises (EMEs). This are entities that generate an annual turnover of R0 and less R10 million.
-Qualifying Small Enterprises (QSEs). These entities have an annual turnover of above R10 million and less R50 million.
-Large Enterprises, are entities with an annual turnover of above R50 million.</p>
-                </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> Can entities operate with consolidated sworn affidavits for purposes of a joint venture?</div>
-                <div class="content ml-4 text-200 mt-0">
-                  <p>The codes do not have a provision for consolidation of Sworn Affidavits in joint venture.</p>
-                </div>
-                <div class="title text-400 font-weight-bold"><i class="dropdown icon"></i> How can an entity apply the modified flow through to obtain 51% and 100% black ownership?</div>
-                <div class="content ml-4 text-200 mt-0">
-                  <p>In terms of Code Series 100, an entity may apply the modified-flow through principle to determine black ownership, where in the chain of ownership structure black people have a flow-through level of participation of at least 51%, then only once in that entire ownership structure of the entity such black participation may be treated as though it were 100%.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
 
-
-    <footer class="footer-bg-color">
-      <div class="container">
-        <div class="row fs--1 no-gutters py-4 text-center">
-          <div class="col-md-6 col-sm-auto text-md-left pl-0">
-            <p class="mb-0 text-400">Powered by SpecCon Holdings<span class="d-none d-sm-inline-block">| </span><br class="d-sm-none" /> 2025 &copy;</p>
-          </div>
-          <div class="col-md-5 col-sm-auto text-right d-none d-sm-block ml-6 ml-md-0">
-            
-          </div>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
         </div>
-      </div>
     </footer>
-    <div class="modal fade bd-example-modal-lg overflow-auto" tabindex="-1" role="dialog" aria-labelledby="registration-modal" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header flex-column">
-            <button class="close pr-3 pt-2" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-            <div class="w-75">
-              <h4 class="pl-3 text-900" id="registration-modal">Register For B-BBEE</h4>
-              <p class="pl-3 mb-0"></p>
-            </div>
-          </div>
-          <div class="modal-body">
-            <form class="zform" method="post">
-              <div class="from-row">
-                <div class="col-lg-9">
-                  <div class="form-group">
-                    <input class="form-control" type="text" name="name" required="" placeholder="First Name*">
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9 mt-sm-0 mt-3">
-                  <div class="form-group">
-                    <input class="form-control" type="text" name="name" required="" placeholder="Last Name*">
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9">
-                  <div class="form-group">
-                    <input class="form-control" type="email" name="from" required="" placeholder="Business Email Address*">
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9 mt-sm-0 mt-3">
-                  <div class="form-group">
-                    <input class="form-control" type="tel" placeholder="Phone">
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9">
-                  <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Company Name">
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9 mb-3">
-                  <select class="custom-select mr-sm-2 text-400" id="inlineFormCustomSelect">
-                    <option selected="">Country Name</option>
-                    <option value="1">South Africa</option>
-                    <option value="2">India</option>
-                    <option value="3">England</option>
-                  </select>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9 mt-sm-0 order-sm-0 order-1">
-                  <div class="custom-control custom-checkbox mb-3">
-                    <input class="custom-control-input" id="customControlValidation3" type="checkbox" name="radio-stacked" required="" value="option3">
-                    <label class="custom-control-label fs-0 text-500 text-base" for="customControlValidation3">Yes, I would like to receive emails from the <a class="text-decoration-none" href="https://speccon.co.za/">SpecCon Holdings</a> </label>
-                  </div>
-                </div>
-              </div>
-              <div class="from-row">
-                <div class="col-lg-9 pb-3">
-                  <button class="btn btn-danger btn-lg" type="submit" name="submit" value="Send!">Submmit</button>
-                </div>
-              </div>
-              <div class="zform-feedback"></div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    <script>
+        lucide.createIcons();
 
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/plugins.js"></script>
-    <script src="assets/lib/loaders.css/loaders.css.js"></script>
-    <script src="assets/lib/stickyfilljs/stickyfill.min.js"></script>
-    <script src="assets/lib/sticky-kit/sticky-kit.min.js"></script>
-    <script src="assets/lib/jquery-countdown/jquery.countdown.min.js"></script>
-    <script src="assets/lib/semantic-ui-accordion/accordion.min.js"></script>
-    <script src="assets/lib/semantic-ui-transition/transition.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw&amp;callback=initMap" async></script>
-    <script src="assets/js/theme.js"></script>
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
 
-  </body>
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('svg');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content && item.style.maxHeight) {
+                        item.style.maxHeight = null;
+                        item.previousElementSibling.querySelector('svg').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                } 
+            });
+        });
+
+    </script>
+</body>
 
 </html>
+
+
+
+
+
+
+
+/body>
+
+</html>
+
+
+
+
+
+
+
