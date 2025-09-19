@@ -1,3 +1,3 @@
-# BEEE-Website
+# BBBEE-Website
 
-GitHub Pages: https://tancelseaparo-ctrl.github.io/BEEE-Website/
+GitHub Pages: https://tancelseaparo-ctrl.github.io/bbbee-Website/
