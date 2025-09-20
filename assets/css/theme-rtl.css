@@ -9591,6 +9591,8 @@ button.bg-django:focus {
 .pr-6,
 .px-6 {
   padding-left: 4rem !important;
+  box-shadow: 0.3rem 0.3rem 0.1rem #F3A712,
+				0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .pb-6,
