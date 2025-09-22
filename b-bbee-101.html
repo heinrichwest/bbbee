@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-BBEE 101 | SpecCon Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #12265E;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-[#12265E] backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white-900">
+                    <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-white hover:text-[#ff9c2a] transition duration-300">About Us</a>
+                    <a href="index.html#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                    <a href="index.html#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 shadow">
+  Register Now
+</a>
+
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="index.html#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="bbbee-consultants.html" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
+                <a href="our-clients.html" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 text-gray-600 hover:text-blue-600">Learn B-BBEE</a>
+                <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="#contact" 
+   class="block mt-4 bg-[#12265E] text-white font-semibold px-5 py-2 rounded-lg 
+          hover:bg-[#ff9c2a] transition duration-300 text-center animate-pulse">
+  Register Now
+</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">B-BEE 101: How Levels Work & Procurement Recognition</h1>
+                    <p class="text-lg text-gray-600 mb-12">A plain-English guide to understand where your B-BEE level comes from, how procurement recognition is calculated, and what different-sized businesses need to do.</p>
+
+                    <div class="space-y-12">
+                        <div>
+                            <h2 class="text-3xl font-bold text-blue-900 mb-4">1) The three size bands (and what each must do)</h2>
+                            <div class="space-y-12">
+                                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">EME (Exempt Micro Enterprise)</h3>
+                                            <p class="text-gray-600 mt-2"><strong class="font-semibold">Typical turnover:</strong> up to R10 million (sector codes may differ).</p>
+                                            <p class="text-gray-600"><strong class="font-semibold">Compliance method:</strong> Affidavit, not a full verification.</p>
+                                            <p class="text-gray-600 mt-2"><strong class="font-semibold">Deemed levels (ownership-based):</strong></p>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2">
+                                                <li>100% black-owned: Level 1</li>
+                                                <li>≥51% black-owned: Level 2</li>
+                                                <li>Other ownership: usually Level 4 (affidavit confirms).</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="EME" class="rounded-xl shadow-lg w-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                                        <div>
+                                            <img src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="QSE" class="rounded-xl shadow-lg w-full">
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">QSE (Qualifying Small Enterprise)</h3>
+                                            <p class="text-gray-600 mt-2"><strong class="font-semibold">Typical turnover:</strong> R10–R50 million (sector codes may differ).</p>
+                                            <p class="text-gray-600"><strong class="font-semibold">Compliance method:</strong> Scorecard (+ verification), unless black-owned (then deemed levels apply):</p>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2">
+                                                <li>100% black-owned: Level 1</li>
+                                                <li>≥51% black-owned: Level 2</li>
+                                                <li>Other ownership: measured on the QSE scorecard.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">Generic (Large Enterprise)</h3>
+                                            <p class="text-gray-600 mt-2"><strong class="font-semibold">Turnover:</strong> > R50 million.</p>
+                                            <p class="text-gray-600"><strong class="font-semibold">Compliance method:</strong> Full scorecard + verification with a SANAS-accredited verification agency.</p>
+                                        </div>
+                                        <div>
+                                            <img src="https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Generic" class="rounded-xl shadow-lg w-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 italic mt-6">ℹ️ Exact thresholds and special rules can vary under sector codes (e.g., Construction, ICT, Finance). We’ll apply the correct code for your industry.</p>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">2) What makes up your score (elements)</h2>
+                                <p class="text-gray-600 mb-4">Your scorecard totals points across five elements (sector codes may weight them differently):</p>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li><strong class="font-semibold">Ownership</strong> – effective black ownership (and specific categories such as women, youth, designated groups).</li>
+                                    <li><strong class="font-semibold">Management Control</strong> – representation of black people at board, executive, senior, middle, junior levels.</li>
+                                    <li><strong class="font-semibold">Skills Development</strong> – spend on accredited training, learnerships, internships (with emphasis on priority groups).</li>
+                                    <li><strong class="font-semibold">Enterprise & Supplier Development (ESD)</strong> – Preferential Procurement (buying from compliant suppliers), Supplier Development, and Enterprise Development (supporting black-owned SMMEs).</li>
+                                    <li><strong class="font-semibold">Socio-Economic Development (SED)</strong> – qualifying contributions to beneficiaries.</li>
+                                </ul>
+                                <h3 class="text-2xl font-semibold text-gray-800 mt-6">Priority elements & sub-minimums (why some scores “drop a level”)</h3>
+                                <p class="text-gray-600 mt-2">Priority elements (typically Ownership, Skills, and ESD). If you miss the sub-minimum on a priority element, your final level can be discounted (usually by one level per the Codes; QSEs have specific rules: Ownership is mandatory plus one of the other two). This is why planning and tracking through the year matters.</p>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">3) Levels and procurement recognition</h2>
+                                <p class="text-gray-600 mb-4">Your B-BEE level converts into a recognition percentage. Customers multiply their spend with you by this percentage to count it toward their own scorecard.</p>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full bg-white border border-gray-200">
+                                        <thead class="bg-gray-100">
+                                            <tr>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Level</th>
+                                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Recognition %</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="divide-y divide-gray-200">
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">1</td><td class="px-6 py-4 whitespace-nowrap">135%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">2</td><td class="px-6 py-4 whitespace-nowrap">125%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">3</td><td class="px-6 py-4 whitespace-nowrap">110%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">4</td><td class="px-6 py-4 whitespace-nowrap">100%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">5</td><td class="px-6 py-4 whitespace-nowrap">80%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">6</td><td class="px-6 py-4 whitespace-nowrap">60%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">7</td><td class="px-6 py-4 whitespace-nowrap">50%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">8</td><td class="px-6 py-4 whitespace-nowrap">10%</td></tr>
+                                            <tr><td class="px-6 py-4 whitespace-nowrap">Non-compliant</td><td class="px-6 py-4 whitespace-nowrap">0%</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="text-gray-600 mt-4"><strong class="font-semibold">Quick example:</strong> If your company is Level 2 and your customer buys R1,000,000 from you: R1,000,000 × 125% = R1,250,000 recognised toward their procurement points.</p>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">4) Affidavit vs Verification</h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800">Affidavit (EME and some black-owned QSEs)</h3>
+                                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                                            <li>A sworn statement confirming turnover band and black ownership %.</li>
+                                            <li>Uses the correct industry template (generic or sector-specific).</li>
+                                            <li>Valid for 12 months (or until circumstances change).</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-semibold text-gray-800">Verification (QSE & Generic not covered by deemed levels)</h3>
+                                        <ul class="list-disc list-inside text-gray-600 mt-2">
+                                            <li>Independent assessment by a SANAS-accredited verification agency.</li>
+                                            <li>Checks evidence for each element (policies, payroll, training records, supplier certificates/affidavits, ESD/SED agreements and proof, etc.).</li>
+                                            <li>Results in a B-BEE certificate showing your points and level.</li>
+                                        </ul>
+                                        <p class="text-gray-600 mt-2">SpecCon prepares and supports your verification-readiness (modelling, evidence file, mock audit). Verification itself is conducted independently by SANAS-accredited agencies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">5) Sector codes: why they matter</h2>
+                                <p class="text-gray-600">Some industries have their own sector codes with different targets, weightings, or definitions (e.g., Construction, Financial Services, ICT, Tourism, Property, Transport). We’ll confirm which code applies to you and flag any sector-specific quirks.</p>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">6) Getting (and keeping) the level you need</h2>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li><strong class="font-semibold">Plan early.</strong> Map your current points and the sub-minimums.</li>
+                                    <li><strong class="font-semibold">Focus spend.</strong> Align Skills, ESD/SED, and procurement to close gaps efficiently.</li>
+                                    <li><strong class="font-semibold">Clean your supplier base.</strong> Prioritise Level 1–4 and ≥51% black-owned suppliers where possible; collect valid affidavits/certificates.</li>
+                                    <li><strong class="font-semibold">Build the evidence file as you go.</strong> Keep signed agreements, invoices, proof of payment, attendance registers, learner statements of results, supplier certificates, etc.</li>
+                                    <li><strong class="font-semibold">Run a mock audit.</strong> Catch gaps before verification.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">7) Common pitfalls (and quick wins)</h2>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li><strong>Pitfall:</strong> Missing a priority element sub-minimum → level drop. <br><strong>Win:</strong> Track sub-minimums quarterly; adjust spend before year-end.</li>
+                                    <li><strong>Pitfall:</strong> Supplier certificates expired at verification. <br><strong>Win:</strong> Monthly/quarterly supplier clean-ups and reminders.</li>
+                                    <li><strong>Pitfall:</strong> Skills spend that isn’t accredited or poorly evidenced. <br><strong>Win:</strong> Use accredited programmes (incl. learnerships) with full documentation.</li>
+                                    <li><strong>Pitfall:</strong> Last-minute ESD/SED with weak proof. <br><strong>Win:</strong> Pre-approved SD/ESD agreements, milestone evidence, and clear beneficiary eligibility.</li>
+                                </ul>
+                            </div>
+                            <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                                <h2 class="text-3xl font-bold text-blue-900 mb-4">8) Quick glossary</h2>
+                                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                                    <li><strong class="font-semibold">Recognition:</strong> The % your customers can claim on their procurement for buying from you.</li>
+                                    <li><strong class="font-semibold">Deemed level:</strong> Automatic level for black-owned EME/QSE (affidavit-based).</li>
+                                    <li><strong class="font-semibold">Priority element:</strong> Element with a sub-minimum you must reach to avoid a level discount.</li>
+                                    <li><strong class="font-semibold">Sub-minimum:</strong> Minimum % of the target you must achieve on a priority element.</li>
+                                    <li><strong class="font-semibold">Sector code:</strong> Industry-specific version of the Codes of Good Practice.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-12">
+                            <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">Ready to take action?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#12265E] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

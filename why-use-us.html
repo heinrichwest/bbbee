@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Use Us | SpecCon Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #12265E;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-[#12265E] backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white-900">
+                    <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-white hover:text-[#ff9c2a] transition duration-300">About Us</a>
+                    <a href="index.html#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                    <a href="index.html#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 shadow">
+  Register Now
+</a>
+
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="index.html#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="bbbee-consultants.html" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
+                <a href="our-clients.html" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 text-gray-600 hover:text-blue-600">Learn B-BBEE</a>
+                <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="#contact" 
+   class="block mt-4 bg-[#12265E] text-white font-semibold px-5 py-2 rounded-lg 
+          hover:bg-[#ff9c2a] transition duration-300 text-center animate-pulse">
+  Register Now
+</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Strategic planning" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div>
+                        <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-4">Why Use Us?</h1>
+                        <p class="text-gray-600 leading-relaxed mb-6">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Deep Expertise:</strong> Cross-sector experience in all B-BBEE elements.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Actionable Strategy:</strong> Clear deliverables, budgets, timelines, and a living evidence index.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Verification-Ready:</strong> Mock audits, checklists, and gap-closing “quick wins” from day one.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#12265E] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>

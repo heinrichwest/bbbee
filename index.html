@@ -35,10 +35,11 @@
                     <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
                 </a>
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-white hover:text-[#ff9c2a] transition duration-300">About Us</a>
+                    <a href="why-use-us.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Why Use Us</a>
                     <a href="#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
-                    <a href="#team" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
-                    <a href="#clients" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
                     <a href="#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
                 </nav>
                 <div class="hidden md:block">
@@ -52,10 +53,11 @@
             </div>
             <!-- Mobile Menu -->
             <div id="mobile-menu" class="hidden md:hidden mt-4">
-                <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="why-use-us.html" class="block py-2 text-gray-600 hover:text-blue-600">Why Use Us</a>
                 <a href="#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
-                <a href="#team" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
-                <a href="#clients" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="bbbee-consultants.html" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
+                <a href="our-clients.html" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 text-gray-600 hover:text-blue-600">Learn B-BBEE</a>
                 <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
                 <a href="#contact" 
    class="block mt-4 bg-[#12265E] text-white font-semibold px-5 py-2 rounded-lg 
@@ -69,9 +71,15 @@
     <main>
         <!-- Hero Section -->
         <section class="relative text-white min-h-screen flex items-center justify-center overflow-hidden">
-             <!-- Background Image -->
-            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
-             <!-- Overlay -->
+            <!-- Slideshow container -->
+            <div class="absolute inset-0 w-full h-full">
+                <!-- Slides -->
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg2.png.jpg');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg3.png.jpg');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg4.png.jpg');"></div>
+            </div>
+            <!-- Overlay -->
             <div class="absolute inset-0 bg-gray-900 opacity-60 z-10"></div>
             <div class="relative z-20 container mx-auto px-6 text-center">
                 <div class="max-w-3xl mx-auto">
@@ -94,7 +102,7 @@
                         <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Strategic planning" class="rounded-xl shadow-lg w-full">
                     </div>
                     <div>
-                        <h3 class="text-2xl font-semibold text-blue-800 mb-4">Who is SpecCon?</h3>
+                        <h3 class="text-3xl font-bold mb-4" style="color:#12265E;">Who is SpecCon?</h3>
                         <p class="text-gray-600 leading-relaxed mb-6">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
                         <ul class="space-y-4">
                             <li class="flex items-start">
@@ -389,6 +397,24 @@
                 } 
             });
         });
+
+        // Hero Slideshow
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.style.opacity = (index === n) ? '1' : '0';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
 
     </script>
 </body>

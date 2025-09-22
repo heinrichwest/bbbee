@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B-BBEE Deep-Dive | SpecCon Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #12265E;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-[#12265E] backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white-900">
+                    <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-white hover:text-[#ff9c2a] transition duration-300">About Us</a>
+                    <a href="index.html#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                    <a href="index.html#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 shadow">
+  Register Now
+</a>
+
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="index.html#about" class="block py-2 text-gray-600 hover:text-blue-600">About Us</a>
+                <a href="index.html#services" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="bbbee-consultants.html" class="block py-2 text-gray-600 hover:text-blue-600">Consultants</a>
+                <a href="our-clients.html" class="block py-2 text-gray-600 hover:text-blue-600">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 text-gray-600 hover:text-blue-600">Learn B-BBEE</a>
+                <a href="index.html#contact" class="block py-2 text-gray-600 hover:text-blue-600">Contact</a>
+                <a href="#contact" 
+   class="block mt-4 bg-[#12265E] text-white font-semibold px-5 py-2 rounded-lg 
+          hover:bg-[#ff9c2a] transition duration-300 text-center animate-pulse">
+  Register Now
+</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-900 mb-8">B-BEE Deep-Dive: Element by Element</h1>
+                    <p class="text-lg text-gray-600 mb-12">A practical, plain-English guide you can paste into your site. Each section explains how scoring works, what evidence you need, typical pitfalls, and quick wins—with a clear call-to-action.</p>
+
+                    <div class="space-y-16">
+                        <!-- Ownership -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">Ownership</h2>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">At a glance</h3>
+                                            <p class="text-gray-600 mt-2">Ownership measures the effective black ownership of your company (voting rights, economic interest, and “net value” over time). Points are available for overall black ownership as well as black women, designated groups, and employee/community ownership (ESOPs/trusts).</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">How you’re scored (in practice)</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Voting rights and economic interest held by black people (incl. black women & designated groups).</li>
+                                                <li>Net value to ensure the deal isn’t “paper only” and that value flows over time.</li>
+                                                <li>Bonus for broad-based schemes (ESOPs/community trusts) when real participation and dividends exist.</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">Common pitfalls</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>“Tick-box” structures with no dividend flow or unclear funding.</li>
+                                                <li>ESOPs without real governance or beneficiary communication.</li>
+                                                <li>Misstated black women or designated group percentages.</li>
+                                                <li>Deals that fail net-value tests at verification.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="text-center mt-8">
+                                            <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Speak to an Ownership specialist</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184423/pexels-photo-3184423.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Ownership" class="rounded-xl shadow-lg w-full">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Management Control -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">Management Control</h2>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184431/pexels-photo-3184431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Management Control" class="rounded-xl shadow-lg w-full">
+                                </div>
+                                <div>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">At a glance</h3>
+                                            <p class="text-gray-600 mt-2">Measures black representation at Board, executive, senior, middle, junior management, plus persons with disabilities. Many sector codes use EAP (Economically Active Population) to benchmark representation.</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">How you’re scored (in practice)</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Headcount and roles mapped to the correct occupational levels.</li>
+                                                <li>Points for black people (and black women) in decision-making roles.</li>
+                                                <li>Additional recognition for people with disabilities (with valid proof).</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">Common pitfalls</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Incorrect level mapping (e.g., calling supervisors “management”).</li>
+                                                <li>Counting acting/temporary roles without proper appointment.</li>
+                                                <li>EAP not applied (or applied to the wrong region/sector).</li>
+                                                <li>Disability status not correctly documented.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="text-center mt-8">
+                                            <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Book a Management Control review</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skills Development -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">Skills Development</h2>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">At a glance</h3>
+                                            <p class="text-gray-600 mt-2">Rewards accredited training spend and workplace programmes (learnerships, internships, apprenticeships), with emphasis on priority groups (e.g., black women, youth, persons with disabilities). Absorption of learners increases impact.</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">How you’re scored (in practice)</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Spend on accredited training against your leviable amount.</li>
+                                                <li>Headcount on quality programmes (learnerships etc.).</li>
+                                                <li>Additional recognition for people with disabilities and absorption.</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">Common pitfalls</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Non-accredited training doesn’t count.</li>
+                                                <li>Poor records (no registers/SoRs).</li>
+                                                <li>Late or missing WSP/ATR submissions.</li>
+                                                <li>Disability funding counted without proper proof.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="text-center mt-8">
+                                            <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Plan my Skills year</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184429/pexels-photo-3184429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Skills Development" class="rounded-xl shadow-lg w-full">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Enterprise & Supplier Development (ESD) -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">Enterprise & Supplier Development (ESD)</h2>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Enterprise & Supplier Development" class="rounded-xl shadow-lg w-full">
+                                </div>
+                                <div>
+                                    <div class="space-y-8">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">A) Preferential Procurement</h3>
+                                            <p class="text-gray-600 mt-2">Your annual verified spend mix by supplier category (Levels 1–8, ≥51% Black-Owned, ≥30% Black Women-Owned, Designated Group suppliers, EMEs/QSEs, etc.). Spend must be supported by valid certificates/affidavits for the measurement period.</p>
+                                            <h4 class="text-xl font-semibold text-gray-700 mt-4">Quick Wins</h4>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Quarterly supplier clean-ups and reminder cadence.</li>
+                                                <li>Onboard Level 1–4 and ≥51% BO/BWO suppliers for key categories.</li>
+                                                <li>Use our Recognition Calculator to target high-impact shifts.</li>
+                                            </ul>
+                                            <div class="text-center mt-6">
+                                                <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Improve my procurement score</a>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">B) Supplier Development (SD) & Enterprise Development (ED)</h3>
+                                            <p class="text-gray-600 mt-2">Qualifying contributions (cash, loans, guarantees, tooling, incubation, mentoring, market access) to qualifying beneficiaries (typically black-owned EMEs/QSEs for SD; broader black beneficiaries for ED). Evidence of actual benefit and sustainability (outputs/outcomes).</p>
+                                            <h4 class="text-xl font-semibold text-gray-700 mt-4">Quick Wins</h4>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Convert ad-hoc donations into structured SD/ED programmes with milestones.</li>
+                                                <li>Support supplier candidates you already buy from (SD) to grow your recognition and reliability.</li>
+                                                <li>Blend non-financial support (mentoring, market access) with targeted funding.</li>
+                                            </ul>
+                                            <div class="text-center mt-6">
+                                                <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Build my SD/ED programme</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Socio-Economic Development (SED) -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border-2 border-gray-200 card-hover transition-all duration-300">
+                            <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-2 border-blue-200 pb-2">Socio-Economic Development (SED)</h2>
+                            <div class="grid md:grid-cols-2 gap-8 items-center">
+                                <div>
+                                    <div class="space-y-6">
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">At a glance</h3>
+                                            <p class="text-gray-600 mt-2">Rewards contributions that create sustainable access to the economy for qualifying beneficiaries (typically where at least 75% of benefits accrue to black people).</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">How you’re scored (in practice)</h3>
+                                            <p class="text-gray-600 mt-2">Cash, in-kind, or services with documented value and beneficiary letters confirming impact and demographics. Points awarded up to the SED target (sector-specific rules may apply).</p>
+                                        </div>
+                                        <div>
+                                            <h3 class="text-2xl font-semibold text-gray-800">Quick Wins</h3>
+                                            <ul class="list-disc list-inside text-gray-600 mt-2 space-y-1">
+                                                <li>Partner with vetted NPOs that can evidence 75%+ black benefit.</li>
+                                                <li>Align SED to your skills/ESD pipeline (bursaries feeding internships, for example).</li>
+                                                <li>Pre-approve letter templates and evidence lists with beneficiaries.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="text-center mt-8">
+                                            <a href="index.html#contact" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300">Optimise my SED</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184424/pexels-photo-3184424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Socio-Economic Development" class="rounded-xl shadow-lg w-full">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#12265E] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
