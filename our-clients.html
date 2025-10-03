@@ -44,8 +44,8 @@
   Register Now
 </a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden">
-                    <i data-lucide="menu" class="w-6 h-6 text-white"></i>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
                 </button>
             </div>
             <!-- Mobile Menu -->
@@ -71,35 +71,70 @@
                     <h1 class="text-4xl md:text-5xl font-bold text-blue-900">Our Clients</h1>
                     <p class="text-lg text-gray-600 mt-2">We have over 500 active clients. Here is a list of some of them.</p>
                 </div>
-                 <div class="grid grid-cols-2 md:grid-cols-4 items-center">
-                    <div class="flex justify-center">
-                       <a href="https://www.avi.co.za/">
-  <img src="assets/img/logos/Avi.png" alt="Client Logo 1" class="h-40 filter hover:grayscale-0 transition-all duration-300">
-</a>
-                    </div>
-                    <div class="flex justify-center">
-                        <a href="https://www.afgri.co.za/">
-                        <img src="assets/img/logos/Afgri.png" alt="Client Logo 2" class="h-40 filter hover:grayscale-0 transition-all duration-300"></a>
-                    </div>
-                    <div class="flex justify-center">
-                       <a href="https://www.bmw.co.za/en/index.html">
-                        <img src="assets/img/logos/BMW.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300"></a> 
-                    </div>
-                    <div class="flex justify-center">
-                        <a href="https://www.absa.co.za/personal/">
-                        <img src="assets/img/logos/Absa logo.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300"></a>
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="assets/img/logos/VKB.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="assets/img/logos/Bidvest McCarthy.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
-                    </div>
-                    <div class="flex justify-center">
-                        <img src="assets/img/logos/PEG.png" alt="Client Logo 3" class="h-40 filter  hover:grayscale-0 transition-all duration-300">
-                    </div>
-                </div>
+                <div class="relative max-w-7xl mx-auto">
+                    <!-- Navigation Arrows -->
+                    <button id="prevClient" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -ml-4">
+                        <i data-lucide="chevron-left" class="w-6 h-6 text-white"></i>
+                    </button>
+                    <button id="nextClient" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -mr-4">
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-white"></i>
+                    </button>
 
+                    <!-- Carousel Container -->
+                    <div class="overflow-hidden">
+                        <div id="clientsCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Client Logo 1 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.avi.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Avi.png" alt="AVI" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 2 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.afgri.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Afgri.png" alt="Afgri" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 3 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.bmw.co.za/en/index.html" target="_blank">
+                                        <img src="assets/img/logos/BMW.png" alt="BMW" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 4 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.absa.co.za/personal/" target="_blank">
+                                        <img src="assets/img/logos/Absa logo.png" alt="Absa" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 5 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/VKB.png" alt="VKB" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 6 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/Bidvest McCarthy.png" alt="Bidvest McCarthy" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 7 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/PEG.png" alt="PEG" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -130,6 +165,99 @@
                 mobileMenu.classList.add('hidden');
             });
         });
+
+        // Clients Carousel
+        const clientsCarousel = document.getElementById('clientsCarousel');
+        const prevClientBtn = document.getElementById('prevClient');
+        const nextClientBtn = document.getElementById('nextClient');
+
+        if (clientsCarousel && prevClientBtn && nextClientBtn) {
+            let currentClientIndex = 0;
+            const clientLogos = clientsCarousel.querySelectorAll('.flex-shrink-0');
+            const totalClients = clientLogos.length;
+            let autoSlideInterval;
+
+            // Get number of visible logos based on screen size
+            function getVisibleLogos() {
+                if (window.innerWidth >= 768) return 4; // md and up
+                return 2; // mobile
+            }
+
+            function updateClientCarousel() {
+                const visibleLogos = getVisibleLogos();
+                const logoWidth = 100 / visibleLogos;
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                // Ensure currentClientIndex is within bounds
+                currentClientIndex = Math.min(Math.max(0, currentClientIndex), maxIndex);
+
+                const translateX = -(currentClientIndex * logoWidth);
+                clientsCarousel.style.transform = `translateX(${translateX}%)`;
+
+                // Update button states
+                prevClientBtn.disabled = currentClientIndex === 0;
+                nextClientBtn.disabled = currentClientIndex >= maxIndex;
+
+                prevClientBtn.style.opacity = currentClientIndex === 0 ? '0.5' : '1';
+                prevClientBtn.style.cursor = currentClientIndex === 0 ? 'not-allowed' : 'pointer';
+                nextClientBtn.style.opacity = currentClientIndex >= maxIndex ? '0.5' : '1';
+                nextClientBtn.style.cursor = currentClientIndex >= maxIndex ? 'not-allowed' : 'pointer';
+            }
+
+            function autoSlide() {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                if (currentClientIndex >= maxIndex) {
+                    currentClientIndex = 0;
+                } else {
+                    currentClientIndex++;
+                }
+                updateClientCarousel();
+            }
+
+            prevClientBtn.addEventListener('click', () => {
+                if (currentClientIndex > 0) {
+                    currentClientIndex--;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            nextClientBtn.addEventListener('click', () => {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+                if (currentClientIndex < maxIndex) {
+                    currentClientIndex++;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            // Pause auto-slide on hover
+            clientsCarousel.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            clientsCarousel.addEventListener('mouseleave', () => {
+                autoSlideInterval = setInterval(autoSlide, 3000);
+            });
+
+            // Update carousel on window resize
+            let clientResizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(clientResizeTimeout);
+                clientResizeTimeout = setTimeout(updateClientCarousel, 100);
+            });
+
+            // Initialize carousel and start auto-slide
+            updateClientCarousel();
+            autoSlideInterval = setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
+        }
     </script>
 </body>
 
