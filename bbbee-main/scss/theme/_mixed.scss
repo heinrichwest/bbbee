@@ -1,0 +1,158 @@
+/*-----------------------------------------------
+|   Object fit and Z-index
+-----------------------------------------------*/
+.fit-cover{ object-fit: cover; }
+.z-index-1{ z-index: 1; }
+
+/*-----------------------------------------------
+|   Zanimation
+-----------------------------------------------*/
+*[data-zanim-trigger]{ opacity: 0; }
+
+/*-----------------------------------------------
+|   Puppeteer
+-----------------------------------------------*/
+.puppeteer{
+  .fancynavbar{ display: none !important; }
+  .main, .footer{ width: 100vw !important;  }
+  *[data-zanim-trigger]{ opacity: 1 !important; }
+}
+
+/*-----------------------------------------------
+|   Error Page
+-----------------------------------------------*/
+.fs-error{
+  font-size: 7rem;
+  @include media-breakpoint-up(sm){ font-size: 10rem; }
+}
+
+/*-----------------------------------------------
+|   NDR
+-----------------------------------------------*/
+.icon-group{
+  display: flex;
+  .icon-item:not(:last-child){ margin-right: map_get($spacers, 2); }
+}
+.icon-item{
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $gray-700;
+  transition: $transition-base;
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 0;
+  font-size: $font-size-sm;
+  box-shadow: $box-shadow-sm;
+  @include hover-focus{ background-color: $light; }
+  &.icon-item-lg{
+    height: 2.75rem;
+    width: 2.75rem;
+  }
+}
+
+.cursor-pointer{ cursor: pointer; }
+.pointer-event-none{ pointer-events: none; }
+.resize-none{ resize: none; }
+
+/*-----------------------------------------------
+|   Select 2
+-----------------------------------------------*/
+.border-0 + .select2 .select2-selection{ border: none !important; }
+
+/*-----------------------------------------------
+|   Social Outline Buttons
+-----------------------------------------------*/
+.btn-outline-facebook{ @include button-outline-variant($facebook) }
+.btn-outline-twitter { @include button-outline-variant($twitter) }
+.btn-outline-google-plus { @include button-outline-variant($google-plus) }
+
+
+/*-----------------------------------------------
+|   Past event page gellary image
+-----------------------------------------------*/
+
+.gellary-img{
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
+  > * {
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      padding: 0.25rem;
+  }
+}
+
+
+
+/*-----------------------------------------------
+|  Footer background
+-----------------------------------------------*/
+
+.footer-bg-color { background-color:#1E1449; }
+
+/*-----------------------------------------------
+|  organization section image fit
+-----------------------------------------------*/
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+
+/*-----------------------------------------------
+|  pricing card doller position
+-----------------------------------------------*/
+
+.doller{
+  margin-top: 6px;
+}
+/*-----------------------------------------------
+|  Schdule time position
+-----------------------------------------------*/
+.time-width{
+  width:40px;
+}
+.dash{
+  width:10px;
+}
+
+/*-----------------------------------------------
+|  Subscribe divider 
+-----------------------------------------------*/
+.divider{
+  width: 1px;
+  height: 100px;
+  background: #FFFFFF;
+  overflow: hidden;
+}
+
+
+/*-----------------------------------------------
+|  past event page search button
+-----------------------------------------------*/
+.search-box .search-input {
+  width: 100%;
+  padding: 1.5rem 1.5rem 1.5rem 1.9rem;;
+  font-size: 16px;
+}
+.search-box .search-box-icon {
+  z-index: 1020;
+  top: 50%;
+  left: 84%;
+  -webkit-transform: translateY(-48%);
+  -ms-transform: translateY(-48%);
+  transform: translateY(-48%);
+}
+
+/*-----------------------------------------------
+|  Fix for contact textarea height
+-----------------------------------------------*/
+.text-aria-height{ height: 177px !important; }
+
+/*-----------------------------------------------
+|  Fix for schedule avater
+-----------------------------------------------*/
+.img-schedule { min-width: 3.125rem; }

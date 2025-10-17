@@ -1,0 +1,17 @@
+/*-----------------------------------------------
+|   Card
+-----------------------------------------------*/
+.bg-card{
+  background-size: contain;
+  background-position: right;
+}
+[dir='rtl']{
+  .bg-card{
+    background-position: left;
+    transform: scaleX(-1);
+  }
+}
+/*-----------------------------------------------
+|  Pricing card list padding
+-----------------------------------------------*/
+.card-body .fa-ul li { margin-bottom: 10px; }

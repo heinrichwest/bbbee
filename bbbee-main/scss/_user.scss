@@ -1,0 +1,28 @@
+// 
+// 
+// user.scss
+//
+// Place your own theme CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+.content-container {
+  background-color: white;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.content-container h1,
+.content-container h2,
+.content-container h3,
+.content-container h4,
+.content-container h5,
+.content-container h6 {
+  text-align: center;
+}
+
+.content-container p,
+.content-container ul {
+  text-align: left;
+}

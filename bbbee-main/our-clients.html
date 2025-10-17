@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clients | SpecCon Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #12265E;
+        }
+    </style>
+    <link rel="icon" href="assets/img/logos/B-BBEE.png" type="image/png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-[#12265E] backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-white-900">
+                    <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#about" class="text-white hover:text-[#ff9c2a] transition duration-300">About Us</a>
+                    <a href="index.html#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                    <a href="index.html#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 shadow">
+  Register Now
+</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 absolute top-16 left-0 w-full bg-[#12265E]">
+                <a href="index.html#about" class="block py-2 px-6 text-white hover:text-blue-600">About Us</a>
+                <a href="index.html#services" class="block py-2 px-6 text-white hover:text-blue-600">Services</a>
+                <a href="bbbee-consultants.html" class="block py-2 px-6 text-white hover:text-blue-600">Consultants</a>
+                <a href="our-clients.html" class="block py-2 px-6 text-white hover:text-blue-600">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 px-6 text-white hover:text-blue-600">Learn B-BBEE</a>
+                <a href="index.html#contact" class="block py-2 px-6 text-white hover:text-blue-600">Contact</a>
+                <a href="#contact" 
+   class="block mt-4 mx-6 bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg 
+          hover:bg-[#ff9c2a] transition duration-300 text-center animate-pulse">
+  Register Now
+</a>
+            </div>
+    </header>
+
+    <main class="pt-24">
+        <section id="clients" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl md:text-5xl font-bold text-blue-900">Our Clients</h1>
+                    <p class="text-lg text-gray-600 mt-2">We have over 500 active clients. Here is a list of some of them.</p>
+                </div>
+                <div class="relative max-w-7xl mx-auto">
+                    <!-- Navigation Arrows -->
+                    <button id="prevClient" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -ml-4">
+                        <i data-lucide="chevron-left" class="w-6 h-6 text-white"></i>
+                    </button>
+                    <button id="nextClient" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -mr-4">
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-white"></i>
+                    </button>
+
+                    <!-- Carousel Container -->
+                    <div class="overflow-hidden">
+                        <div id="clientsCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Client Logo 1 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.avi.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Avi.png" alt="AVI" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 2 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.afgri.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Afgri.png" alt="Afgri" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 3 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.bmw.co.za/en/index.html" target="_blank">
+                                        <img src="assets/img/logos/BMW.png" alt="BMW" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 4 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.absa.co.za/personal/" target="_blank">
+                                        <img src="assets/img/logos/Absa logo.png" alt="Absa" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 5 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/VKB.png" alt="VKB" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 6 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/Bidvest McCarthy.png" alt="Bidvest McCarthy" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 7 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/PEG.png" alt="PEG" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#12265E] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Clients Carousel
+        const clientsCarousel = document.getElementById('clientsCarousel');
+        const prevClientBtn = document.getElementById('prevClient');
+        const nextClientBtn = document.getElementById('nextClient');
+
+        if (clientsCarousel && prevClientBtn && nextClientBtn) {
+            let currentClientIndex = 0;
+            const clientLogos = clientsCarousel.querySelectorAll('.flex-shrink-0');
+            const totalClients = clientLogos.length;
+            let autoSlideInterval;
+
+            // Get number of visible logos based on screen size
+            function getVisibleLogos() {
+                if (window.innerWidth >= 768) return 4; // md and up
+                return 2; // mobile
+            }
+
+            function updateClientCarousel() {
+                const visibleLogos = getVisibleLogos();
+                const logoWidth = 100 / visibleLogos;
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                // Ensure currentClientIndex is within bounds
+                currentClientIndex = Math.min(Math.max(0, currentClientIndex), maxIndex);
+
+                const translateX = -(currentClientIndex * logoWidth);
+                clientsCarousel.style.transform = `translateX(${translateX}%)`;
+
+                // Update button states
+                prevClientBtn.disabled = currentClientIndex === 0;
+                nextClientBtn.disabled = currentClientIndex >= maxIndex;
+
+                prevClientBtn.style.opacity = currentClientIndex === 0 ? '0.5' : '1';
+                prevClientBtn.style.cursor = currentClientIndex === 0 ? 'not-allowed' : 'pointer';
+                nextClientBtn.style.opacity = currentClientIndex >= maxIndex ? '0.5' : '1';
+                nextClientBtn.style.cursor = currentClientIndex >= maxIndex ? 'not-allowed' : 'pointer';
+            }
+
+            function autoSlide() {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                if (currentClientIndex >= maxIndex) {
+                    currentClientIndex = 0;
+                } else {
+                    currentClientIndex++;
+                }
+                updateClientCarousel();
+            }
+
+            prevClientBtn.addEventListener('click', () => {
+                if (currentClientIndex > 0) {
+                    currentClientIndex--;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            nextClientBtn.addEventListener('click', () => {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+                if (currentClientIndex < maxIndex) {
+                    currentClientIndex++;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            // Pause auto-slide on hover
+            clientsCarousel.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            clientsCarousel.addEventListener('mouseleave', () => {
+                autoSlideInterval = setInterval(autoSlide, 3000);
+            });
+
+            // Update carousel on window resize
+            let clientResizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(clientResizeTimeout);
+                clientResizeTimeout = setTimeout(updateClientCarousel, 100);
+            });
+
+            // Initialize carousel and start auto-slide
+            updateClientCarousel();
+            autoSlideInterval = setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
+        }
+    </script>
+</body>
+
+</html>

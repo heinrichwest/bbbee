@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecCon Holdings | B-BBEE Made Practical</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-bg {
+            background-color: #12265E;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        }
+        .skills-partners-bg {
+            background-image: url('assets/img/background/photo-1525909002-1b05e0c869d8.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .skills-partners-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #12265E;
+            opacity: 0.8; /* Adjust opacity as needed */
+        }
+    </style>
+    <link rel="icon" href="assets/img/logos/B-BBEE.png" type="image/png">
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- Header -->
+    <header id="home" class="bg-[#12265E] backdrop-blur-md shadow-sm fixed w-full z-50 top-0">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="text-2xl font-bold text-white-900">
+                    <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-20">
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="why-use-us.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Why Use Us</a>
+                    <a href="#services" class="text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                    <a href="bbbee-consultants.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                    <a href="our-clients.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                    <a href="learn-bbbee.html" class="text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                    <a href="#contact" class="text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:block">
+                     <a href="#contact" class="bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 shadow">
+  Register Now
+</a>
+
+                <button id="mobile-menu-button" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="why-use-us.html" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Why Use Us</a>
+                <a href="#services" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Services</a>
+                <a href="bbbee-consultants.html" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Consultants</a>
+                <a href="our-clients.html" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Clients</a>
+                <a href="learn-bbbee.html" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Learn B-BBEE</a>
+                <a href="#contact" class="block py-2 text-white hover:text-[#ff9c2a] transition duration-300">Contact</a>
+                <a href="#contact"
+   class="block mt-4 bg-white text-[#12265E] font-semibold px-5 py-2 rounded-lg
+          hover:bg-[#ff9c2a] hover:text-white transition duration-300 text-center">
+  Register Now
+</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative text-white min-h-screen flex items-center justify-center overflow-hidden">
+            <!-- Slideshow container -->
+            <div class="absolute inset-0 w-full h-full">
+                <!-- Slides -->
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg2.png.jpg');" alt="B-BBEE"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg3.png.jpg');" alt="bbbee affidavit"></div>
+                <div class="slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('assets/img/background/banner-bg4.png.jpg');" alt="bbbee levels"></div>> </div>
+            </div>
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-gray-900 opacity-60 z-10"></div>
+            <div class="relative z-20 container mx-auto px-6 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">B-BBEE Made Practical</h1>
+                    <p class="text-lg md:text-xl text-gray-200 mb-8 animate-fade-in-up">Get your B-BBEE level sorted with plain-English guidance, free self-serve tools, and hands-on support from South Africa’s best consultants.</p>
+                    <a href="#contact" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-blue-700 transition duration-300 shadow-lg transform hover:scale-105">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Your Trusted B-BBEE Partner</h2>
+                    <p class="text-lg text-gray-600 mt-2">Turning compliance from a headache into a working plan.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="how to apply for bbbee certificate" class="rounded-xl shadow-lg w-full">
+                    </div>
+                    <div>
+                        <h3 class="text-3xl font-bold mb-4" style="color:#12265E;">Who is SpecCon?</h3>
+                        <p class="text-gray-600 leading-relaxed mb-6">SpecCon is a South African training and compliance partner that helps organisations turn B-BBEE from a headache into a working plan. We map out your level, build a realistic action roadmap, and leave you with an audit-ready file you can take to any SANAS-accredited verification agency. Our approach is practical, transparent, and built around measurable results—no jargon, no guesswork.</p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Deep Expertise:</strong> Cross-sector experience in all B-BBEE elements.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Actionable Strategy:</strong> Clear deliverables, budgets, timelines, and a living evidence index.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <i data-lucide="check-circle" class="w-6 h-6 text-green-500 mr-3 flex-shrink-0 mt-1"></i>
+                                <span><strong class="font-semibold">Verification-Ready:</strong> Mock audits, checklists, and gap-closing “quick wins” from day one.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">An End-to-End Solution</h2>
+                    
+                    <p class="text-lg text-white mt-2">We provide comprehensive support at every stage of your B-BBEE journey.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service Card 1 -->
+                     
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300" style="box-shadow: 0.3rem 0.3rem 0.1rem #Ff9c2a , 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);">
+    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="search" class="w-8 h-8 text-blue-600"></i>
+    </div>
+    <div class="element-card">
+        <h3 class="text-xl font-bold mb-3">Assess</h3>
+        <p class="text-gray-600">We analyze your current level, identify potential risks, and highlight opportunities for fast wins.</p>
+    </div>
+</div>
+
+<!-- Service Card 2 -->
+<div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300" style="box-shadow: 0.3rem 0.3rem 0.1rem #F3A712, 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);">
+    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="map" class="w-8 h-8 text-blue-600"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3">Plan</h3>
+    <p class="text-gray-600">Receive a detailed, element-by-element roadmap complete with budgets and owners.</p>
+</div>
+
+<!-- Service Card 3 -->
+<div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300" style="box-shadow: 0.3rem 0.3rem 0.1rem #F3A712, 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);">
+    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="play-circle" class="w-8 h-8 text-blue-600"></i>
+    </div>
+    <h3 class="text-xl font-bold mb-3">Implement</h3>
+    <p class="text-gray-600">We assist with evidence collection, supplier clean-up, and skills & ESD programmes.</p>
+</div>
+
+<!-- Service Card 4 -->
+<div class="bg-white p-8 rounded-xl shadow-lg text-center card-hover transition-all duration-300" style="box-shadow: 0.3rem 0.3rem 0.1rem #F3A712, 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.3);">
+    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+        <i data-lucide="shield-check" class="w-8 h-8 text-blue-600"></i> 
+    </div>
+    <h3 class="text-xl font-bold mb-3">Verify</h3>
+    <p class="text-gray-600">Benefit from mock audits, file indexing, and full support through verification.</p>
+</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sectors Section -->
+        <section id="sectors" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Expertise Across All B-BBEE Sector Codes</h2>
+                    <p class="text-lg text-gray-600 mt-2">We have in-depth knowledge of all gazetted Section 9(1) Sector Codes.</p>
+                </div>
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <div class="bg-white p-8 rounded-xl shadow-lg">
+                             <div class="grid md:grid-cols-2 gap-x-8 gap-y-4">
+                                <div class="font-medium text-gray-700">Legal Sector</div>
+                                <div class="font-medium text-gray-700">Defence Sector</div>
+                                <div class="font-medium text-gray-700">Construction Sector</div>
+                                <div class="font-medium text-gray-700">Agri-BEE (Agriculture) Sector</div>
+                                <div class="font-medium text-gray-700">Financial Services Sector</div>
+                                <div class="font-medium text-gray-700">ICT Sector</div>
+                                <div class="font-medium text-gray-700">Property Sector</div>
+                                <div class="font-medium text-gray-700">Forest Sector</div>
+                                <div class="font-medium text-gray-700">Marketing, Advertising & Communication (MAC) Sector</div>
+                                <div class="font-medium text-gray-700">Tourism Sector</div>
+                                <div class="font-medium text-gray-700 col-span-2">Integrated Transport Sector (including Bus, Rail, Aviation, etc.)</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Diverse industry sectors" class="rounded-xl shadow-lg w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Team Section -->
+        <section id="team" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Expert Consultants</h2>
+                    <p class="text-lg text-white mt-2">Meet the trusted professionals ready to guide you.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Zandri">
+                        <h3 class="text-xl font-bold text-gray-900">Zandri</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Anandi">
+                        <h3 class="text-xl font-bold text-gray-900">Anandi</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 text-center card-hover transition-all duration-300">
+                        <img class="w-32 h-32 rounded-full mx-auto mb-4 object-cover" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gert">
+                        <h3 class="text-xl font-bold text-gray-900">Gert</h3>
+                        <p class="text-blue-600 font-semibold">B-BBEE Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-blue-900">Trusted by Industry Leaders</h2>
+                </div>
+                <div class="relative max-w-7xl mx-auto">
+                    <!-- Navigation Arrows -->
+                    <button id="prevClient" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -ml-4">
+                        <i data-lucide="chevron-left" class="w-6 h-6 text-white"></i>
+                    </button>
+                    <button id="nextClient" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[#12265E] hover:bg-[#ff9c2a] rounded-full p-3 shadow-lg transition-all duration-300 -mr-4">
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-white"></i>
+                    </button>
+
+                    <!-- Carousel Container -->
+                    <div class="overflow-hidden">
+                        <div id="clientsCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Client Logo 1 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.avi.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Avi.png" alt="AVI" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 2 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.afgri.co.za/" target="_blank">
+                                        <img src="assets/img/logos/Afgri.png" alt="Afgri" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 3 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.bmw.co.za/en/index.html" target="_blank">
+                                        <img src="assets/img/logos/BMW.png" alt="BMW" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 4 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <a href="https://www.absa.co.za/personal/" target="_blank">
+                                        <img src="assets/img/logos/Absa logo.png" alt="Absa" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Client Logo 5 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/VKB.png" alt="VKB" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 6 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/Bidvest McCarthy.png" alt="Bidvest McCarthy" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                            <!-- Client Logo 7 -->
+                            <div class="w-1/2 md:w-1/4 flex-shrink-0 px-2">
+                                <div class="flex justify-center items-center h-40">
+                                    <img src="assets/img/logos/PEG.png" alt="PEG" class="h-32 filter grayscale hover:grayscale-0 transition-all duration-300">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Valued Skills Partners Section -->
+        <section id="skills-partners" class="py-20 skills-partners-bg">
+            <div class="container mx-auto px-6 relative">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Our Valued Skills Partners</h2>
+                    <p class="text-lg text-white mt-2">Partnering with industry leaders to deliver exceptional skills development.</p>
+                </div>
+                <div class="relative max-w-7xl mx-auto">
+                    <!-- Navigation Arrows -->
+                    <button id="prevPartner" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-all duration-300 -ml-4">
+                        <i data-lucide="chevron-left" class="w-6 h-6 text-[#12265E]"></i>
+                    </button>
+                    <button id="nextPartner" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:bg-gray-100 transition-all duration-300 -mr-4">
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-[#12265E]"></i>
+                    </button>
+
+                    <!-- Carousel Container -->
+                    <div class="overflow-hidden">
+                        <div id="partnersCarousel" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Partner Card 1 -->
+                            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg h-full">
+                                    <div class="flex items-center mb-4">
+                                        <img src="assets/img/logos/D.B Partners Logo_DB Partners Logo White.png" alt="DB Partners" class="w-12 h-12 object-contain mr-4">
+                                        <div>
+                                            <h4 class="text-lg font-bold text-gray-900">DB Partners (Pty) Ltd</h4>
+                                            <p class="text-gray-600 text-sm">Human Resources & Transformation</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="text-gray-700 italic mb-4 text-sm">
+                                        "DB Partners (Pty) Ltd provides Human Resources, Transformation and Industrial relations solutions. Our product offering provides an organisation with a strategic partner which provides expert support in order to assist an organisation to effectively manage the employment relationship pre-, during- and post employment."
+                                    </blockquote>
+                                    <div class="text-right">
+                                        <p class="font-semibold text-gray-900">Dean Basson</p>
+                                        <p class="text-gray-600 text-xs">Managing Director</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Partner Card 2 -->
+                            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg h-full">
+                                    <div class="flex items-center mb-4">
+                                        <img src="assets/img/logos/RM transform.png" alt="RM Transform" class="w-12 h-12 object-contain mr-4">
+                                        <div>
+                                            <h4 class="text-lg font-bold text-gray-900">RM Transform</h4>
+                                            <p class="text-gray-600 text-sm">BBBEE Optimization Specialists</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="text-gray-700 italic mb-4 text-sm">
+                                        "We specialized in the transformation of companies regarding their BEE strategies. We consult, analyze and implement strategies to enhance the Companies BEE score in a cost-effective way with the best possible tax benefits."
+                                    </blockquote>
+                                    <div class="text-right">
+                                        <p class="font-semibold text-gray-900">Ricardo Mulder</p>
+                                        <p class="text-gray-600 text-xs">B-BBEE Optimization Specialist</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Partner Card 3 - Enquire for Skills Partners -->
+                            <div class="w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                                <div class="bg-white p-6 rounded-2xl shadow-lg h-full flex flex-col">
+                                    <div class="flex items-center mb-4">
+                                        <div class="w-12 h-12 bg-[#12265E] rounded flex items-center justify-center mr-4">
+                                            <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="text-lg font-bold text-gray-900">Skills Partners</h4>
+                                            <p class="text-gray-600 text-sm">Customised Training Solutions</p>
+                                        </div>
+                                    </div>
+                                    <blockquote class="text-gray-700 mb-4 text-sm flex-grow">
+                                        Need industry-specific training solutions? Skills Partners designs customized programs tailored to meet your exact requirements.
+                                    </blockquote>
+                                    <div class="mt-auto">
+                                        <a href="#contact" class="block w-full bg-[#12265E] text-white font-semibold px-4 py-2 rounded-lg hover:bg-[#ff9c2a] transition duration-300 text-center text-sm">
+                                            Enquire With Us
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 section-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Frequently Asked Questions</h2>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4" id="faq-accordion">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                            Which entities are measurable under the Codes of Good Practice?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">The following Entities are measurable under the Codes: all Organs of State and Public Entities; all Measured Entities that undertake any economic activity with all Organs of State and Public Entities; and any other Entity that undertakes any economic activity, whether direct or indirect, with any Entity that is subject to measurement under the Codes.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                           How is B-BBEE classification determined?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">B-BBEE classifies entities based on annual turnover: <br>• <strong>Exempted Micro-Enterprises (EMEs):</strong> R0 - R10 million. <br>• <strong>Qualifying Small Enterprises (QSEs):</strong> R10 million - R50 million. <br>• <strong>Large Enterprises:</strong> Above R50 million.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-white rounded-lg shadow-sm">
+                        <button class="faq-toggle flex justify-between items-center w-full p-5 font-semibold text-left">
+                           Can entities use consolidated sworn affidavits for a joint venture?
+                            <i data-lucide="chevron-down" class="w-5 h-5 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out">
+                            <p class="p-5 pt-0 text-gray-600">The codes do not have a provision for consolidation of Sworn Affidavits in a joint venture.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Let's Connect</h2>
+                    <p class="text-lg text-gray-600 mt-2">Reach out to us for a consultation or any inquiries.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Send us a Message</h3>
+                        <iframe 
+    src="https://forms.office.com/pages/responsepage.aspx?id=D8fp1KZZ1kaOao85eBm4CmyGXA5kVhNDn_OrC3GeiZZUQk02Sk9HWFdSVDU2UVlFTVNXNE5JUEJYVi4u&route=shorturl" 
+    width="100%" 
+    height="400" 
+    style="border: none;">
+</iframe>
+                    </div>
+                    <div class="space-y-8">
+                         <div class="bg-white p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4">Contact Details</h3>
+                            <div class="space-y-4 text-gray-600">
+                                <p class="flex items-center"><i data-lucide="mail" class="w-5 h-5 mr-3 text-blue-600"></i> <a href="mailto:help@speccon.co.za" class="hover:text-blue-600">help@speccon.co.za</a></p>
+                                <p class="flex items-center"><i data-lucide="linkedin" class="w-5 h-5 mr-3 text-blue-600"></i> <a href="https://at.linkedin.com/company/speccon-pty-ltd" class="hover:text-blue-600">LinkedIn</a></p>
+                                <p class="flex items-start"><i data-lucide="map-pin" class="w-5 h-5 mr-3 text-blue-600 mt-1"></i> <span>Suite W003 & W004, Midlands Office Park West, 1 Mount Quray Street, Midstream, 1692</span></p>
+                            </div>
+                        </div>
+                        <div class="rounded-xl shadow-lg overflow-hidden h-64">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.373299175368!2d28.18871131504176!3d-25.924945983573547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDU1JzI5LjgiUyAyOMKwMTEnMjguMiJF!5e0!3m2!1sen!2sus!4v1634557890123!5m2!1sen!2sus&q=Suite+W003+%26+W004%2C+Midlands+Office+Park+West%2C+1+Mount+Quray+Street%2C+Midstream%2C+1692" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                      </div> 
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#12265E] text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <img src="assets/img/logos/SpecCon-LOGO.png" alt="SpecCon Holdings Logo" class="h-12 mx-auto mb-4">
+            <p>&copy; 2025 SpecCon Holdings. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = mobileMenu.querySelectorAll('a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // FAQ Accordion
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const content = toggle.nextElementSibling;
+                const icon = toggle.querySelector('svg');
+                
+                // Close other open FAQs
+                document.querySelectorAll('.faq-content').forEach(item => {
+                    if (item !== content && item.style.maxHeight) {
+                        item.style.maxHeight = null;
+                        item.previousElementSibling.querySelector('svg').style.transform = 'rotate(0deg)';
+                    }
+                });
+                
+                // Toggle current FAQ
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    icon.style.transform = 'rotate(180deg)';
+                } 
+            });
+        });
+
+        // Hero Slideshow
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.style.opacity = (index === n) ? '1' : '0';
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+
+        // Skills Partners Carousel
+        const partnersCarousel = document.getElementById('partnersCarousel');
+        const prevPartnerBtn = document.getElementById('prevPartner');
+        const nextPartnerBtn = document.getElementById('nextPartner');
+
+        if (partnersCarousel && prevPartnerBtn && nextPartnerBtn) {
+            let currentPartnerIndex = 0;
+            const partnerCards = partnersCarousel.querySelectorAll('.flex-shrink-0');
+            const totalPartners = partnerCards.length;
+
+            // Get number of visible cards based on screen size
+            function getVisibleCards() {
+                if (window.innerWidth >= 1024) return 3; // lg
+                if (window.innerWidth >= 768) return 2;  // md
+                return 1; // mobile
+            }
+
+            function updateCarousel() {
+                const visibleCards = getVisibleCards();
+                const cardWidth = 100 / visibleCards;
+                const maxIndex = Math.max(0, totalPartners - visibleCards);
+
+                // Ensure currentPartnerIndex is within bounds
+                currentPartnerIndex = Math.min(Math.max(0, currentPartnerIndex), maxIndex);
+
+                const translateX = -(currentPartnerIndex * cardWidth);
+                partnersCarousel.style.transform = `translateX(${translateX}%)`;
+
+                // Show/hide buttons based on available slides
+                if (totalPartners <= visibleCards) {
+                    // Hide both buttons if all cards are visible
+                    prevPartnerBtn.style.display = 'none';
+                    nextPartnerBtn.style.display = 'none';
+                } else {
+                    prevPartnerBtn.style.display = 'flex';
+                    nextPartnerBtn.style.display = 'flex';
+
+                    // Update button states
+                    prevPartnerBtn.disabled = currentPartnerIndex === 0;
+                    nextPartnerBtn.disabled = currentPartnerIndex >= maxIndex;
+
+                    prevPartnerBtn.style.opacity = currentPartnerIndex === 0 ? '0.5' : '1';
+                    prevPartnerBtn.style.cursor = currentPartnerIndex === 0 ? 'not-allowed' : 'pointer';
+                    nextPartnerBtn.style.opacity = currentPartnerIndex >= maxIndex ? '0.5' : '1';
+                    nextPartnerBtn.style.cursor = currentPartnerIndex >= maxIndex ? 'not-allowed' : 'pointer';
+                }
+            }
+
+            prevPartnerBtn.addEventListener('click', () => {
+                if (currentPartnerIndex > 0) {
+                    currentPartnerIndex--;
+                    updateCarousel();
+                }
+            });
+
+            nextPartnerBtn.addEventListener('click', () => {
+                const visibleCards = getVisibleCards();
+                const maxIndex = Math.max(0, totalPartners - visibleCards);
+                if (currentPartnerIndex < maxIndex) {
+                    currentPartnerIndex++;
+                    updateCarousel();
+                }
+            });
+
+            // Update carousel on window resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(updateCarousel, 100);
+            });
+
+            // Initialize carousel
+            updateCarousel();
+        }
+
+        // Clients Carousel
+        const clientsCarousel = document.getElementById('clientsCarousel');
+        const prevClientBtn = document.getElementById('prevClient');
+        const nextClientBtn = document.getElementById('nextClient');
+
+        if (clientsCarousel && prevClientBtn && nextClientBtn) {
+            let currentClientIndex = 0;
+            const clientLogos = clientsCarousel.querySelectorAll('.flex-shrink-0');
+            const totalClients = clientLogos.length;
+            let autoSlideInterval;
+
+            // Get number of visible logos based on screen size
+            function getVisibleLogos() {
+                if (window.innerWidth >= 768) return 4; // md and up
+                return 2; // mobile
+            }
+
+            function updateClientCarousel() {
+                const visibleLogos = getVisibleLogos();
+                const logoWidth = 100 / visibleLogos;
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                // Ensure currentClientIndex is within bounds
+                currentClientIndex = Math.min(Math.max(0, currentClientIndex), maxIndex);
+
+                const translateX = -(currentClientIndex * logoWidth);
+                clientsCarousel.style.transform = `translateX(${translateX}%)`;
+
+                // Update button states
+                prevClientBtn.disabled = currentClientIndex === 0;
+                nextClientBtn.disabled = currentClientIndex >= maxIndex;
+
+                prevClientBtn.style.opacity = currentClientIndex === 0 ? '0.5' : '1';
+                prevClientBtn.style.cursor = currentClientIndex === 0 ? 'not-allowed' : 'pointer';
+                nextClientBtn.style.opacity = currentClientIndex >= maxIndex ? '0.5' : '1';
+                nextClientBtn.style.cursor = currentClientIndex >= maxIndex ? 'not-allowed' : 'pointer';
+            }
+
+            function autoSlide() {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+
+                if (currentClientIndex >= maxIndex) {
+                    currentClientIndex = 0;
+                } else {
+                    currentClientIndex++;
+                }
+                updateClientCarousel();
+            }
+
+            prevClientBtn.addEventListener('click', () => {
+                if (currentClientIndex > 0) {
+                    currentClientIndex--;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            nextClientBtn.addEventListener('click', () => {
+                const visibleLogos = getVisibleLogos();
+                const maxIndex = Math.max(0, totalClients - visibleLogos);
+                if (currentClientIndex < maxIndex) {
+                    currentClientIndex++;
+                    updateClientCarousel();
+                    // Reset auto-slide timer
+                    clearInterval(autoSlideInterval);
+                    autoSlideInterval = setInterval(autoSlide, 3000);
+                }
+            });
+
+            // Pause auto-slide on hover
+            clientsCarousel.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+
+            clientsCarousel.addEventListener('mouseleave', () => {
+                autoSlideInterval = setInterval(autoSlide, 3000);
+            });
+
+            // Update carousel on window resize
+            let clientResizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(clientResizeTimeout);
+                clientResizeTimeout = setTimeout(updateClientCarousel, 100);
+            });
+
+            // Initialize carousel and start auto-slide
+            updateClientCarousel();
+            autoSlideInterval = setInterval(autoSlide, 3000); // Auto-slide every 3 seconds
+        }
+
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
